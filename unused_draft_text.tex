@@ -1,0 +1,123 @@
+
+% --------------------------------------------------------------------------------
+\section{[Text from earlier versions]}
+
+
+This effect may be understood by considering the timing of the minimum distance formulated by Weihs and Webb (1984). 
+
+For $K<1$ the prey is faster than the predator. In this case, intuition leads us to accept that an escape directly away from the predator ($\alpha =0$) is the best solution. What is not so obvious, is that there exists a range of possible escape angles for which the minimum distance function does not change.That is, there is no single optimal escape angle. Thus, a prey can escape along any direction within this range with no penalty.
+
+We begin by noting that at $t=0$, $D^2 = X_0^2.$ For this case, we are interested in escape angles between the two optimal solutions given by Weihs and Webb
+%
+\begin{equation}
+0 \leq \alpha \leq \arccos(K).
+\label{anglerange}
+\end{equation}
+The above inequality leads to 
+\begin{equation}
+K \leq \cos\alpha \leq 1.
+\label{cosinebound}
+\end{equation}      
+%
+To show that the minimum distance does not change for this range of escape angles and $K<1$, it suffices to show that the distance function is always increasing. That is, we want to show that the derivative with respect to time is greater than or equal to zero. 
+
+Taking the derivative of equation \eqref{dist} with respect to time yields
+%
+\begin{equation}
+\frac{\d D^2}{\d t}  = 2(t(U^2+V^2) - UX_0 + V(X_0-2tU)\cos\alpha)
+\label{distderivative}
+\end{equation}  
+%
+Let $X_0=1$ and $U=1$. Since $K = U/V,$ the assumption on the predator's speed leads to $V > 1.$ 
+Then equation \eqref{distderivative} becomes
+%
+\begin{equation}
+\frac{\d D^2}{\d t}  = 2(t(1+V^2) +V\cos\alpha - (2tV + 1))
+\label{distderivative2}
+\end{equation}
+%
+Using the condition on $\cos\alpha$ given in equation \eqref{cosinebound} leads to
+
+\begin{align*}
+\frac{\d D^2}{\d t}  & = 2(t(1+V^2) +V\cos\alpha - (2tV + 1)) \\
+& \geq 2(t(1+V^2) +VK - (2tV + 1)) \\
+& = 2(t(1+V^2) +1 - (2tV + 1)) \\
+& = 2(t(V^2- 2V + 1)) \\
+& =2(t(V-1)^2)\\
+& \geq 0.
+\end{align*}2
+
+This shows that the distance function is always in increasing. Thus, the minimum occurs at $t=0$ and is $D^2 = X_0^2 = 1.$
+
+%-------Older text on y-displacement----------------------------- 
+\subsection{[Earlier version]--Distance Function with Initial y--displacement}
+The distance function (Eqn. \eqref{dist}) is based on the assumption that a predator is heading in the direction of the prey. A slight modification of the distance function is necessary to model a predator that does not perfectly align its motion with the prey's direction. The modified distance function is given by    
+%
+\begin{equation}
+\ol D^2 = ((X_0 - Ut) + Vt\cos\alpha)^2 + (Y_0 + Vt\sin\alpha)^2
+\label{y_dist}
+\end{equation}
+%
+A similar analysis as above leads us to the minimum distance function
+%
+\begin{equation}
+\ol D^2_{min}=\frac{(K Y_0+X_0 \sin \alpha -Y_0\cos \alpha)^2}{K^2-2 K \cos \alpha +1} 
+\label{newDmin2}
+\end{equation}
+%
+Note that this function now depends on the parameters $K$, $X_0$, and $Y_0$, whereas in the simpler case the only parameter was $K$. To maximize $\ol D^2_{min}$ as a function of $\alpha$, we solve
+% 
+\begin{equation}
+0 = \frac{\d \ol D^2_{min}}{\d \alpha} = \frac{2(K \cos \alpha - 1)
+	(K Y_0 - Y_0 \cos \alpha + X_0 \sin\alpha)(K X_0 - X_0 \cos \alpha - Y_0 \sin \alpha)}
+	{(K^2 - 2K \cos \alpha + 1)^2}
+\label{newDmin_dalpha}	
+\end{equation}
+%
+We need only to consider the numerator as the denominator is zero only when $K = \cos \alpha = 1$ and represents the case in which the predator and prey travel at the same speed and in the same direction. There are three cases to consider and each may lead to several possible solutions.
+% 
+\subsubsection{Case 1}
+We first consider $K \cos \alpha - 1=0$. The solution in this case is $\alpha = \arccos(1/K)$ and is only valid for $K\geq 1$. This is also one of the solutions found by Weihs and Webb.
+%
+\subsubsection{Case 2}
+Next we consider the equation 
+%
+\begin{equation}
+K Y_0 - Y_0 \cos \alpha + X_0 \sin\alpha = 0.
+\end{equation}
+%
+There are four possible solutions 
+%
+\begin{equation}
+\alpha = \pm \arccos \left( \frac{K Y_0^2 \pm X_0 
+\ds\sqrt{Y_0^2(1- K^2) + X_0^2 }}{X_0^2+Y_0^2} \right )
+\end{equation}
+%	
+\subsubsection{Case 3}
+For the final case we consider the equation 
+%
+\begin{equation}
+K X_0 - X_0 \cos \alpha - Y_0 \sin\alpha = 0.
+\end{equation}
+%
+Again, there are four possible solutions
+%
+\begin{equation}
+\alpha = \pm \arccos \left( \frac{K X_0^2 \pm Y_0 
+\ds \sqrt{X_0^2(1-K^2) +Y_0^2}}{X_0^2+Y_0^2} \right )
+\end{equation}
+%
+
+The solutions found above for Case 2 and Case 3 can be organized into those which yield positive escape angles ($+ \arccos$) and those which yield negative escape angles. For Case 2, the positive optimal escape angles are 
+%
+\begin{align}
+\alpha_{1} =  \arccos \left( \frac{K Y_0^2 +X_0 
+\ds\sqrt{Y_0^2(1- K^2) + X_0^2 }}{X_0^2+Y_0^2} \right )
+\tag{15a} \label{root_a} \\
+\alpha_{2} = \arccos \left(\frac{K Y_0^2 - X_0 
+\ds\sqrt{Y_0^2(1- K^2) + X_0^2 }}{X_0^2+Y_0^2} \right )
+\tag{15b} \label{root_b}
+\end{align}
+%
+Both $\alpha_1$ and $\alpha_2$ are valid for values of $K$ that satisfy 
+$0< K \leq \ds \frac{\sqrt{X_0^2 + Y_0^2}}{Y_0}.$
