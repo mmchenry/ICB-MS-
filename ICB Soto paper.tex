@@ -160,11 +160,29 @@ We find the optimal escape angle $\alpha$ by solving the following:
 %
 \begin{equation}
 0 = \frac{\d \widetilde{D}^2_{min}}{\d \alpha} = 
-\frac{2(K \cos \alpha - 1)(K\cos \theta_0 - \cos(\alpha - \theta_0))(K\sin \theta_0 + \sin(\alpha -\theta_0))}
+\frac{2(K \cos \alpha - 1)(K\cos \theta_0 - \cos(\alpha - \theta_0))
+(K\sin \theta_0 + \sin(\alpha -\theta_0))}
 {(K^2 - 2K \cos \alpha + 1)^2}
 \end{equation} 
 %
 The solutions to this equation are given by \dots
+\begin{enumerate}
+\item[a.] Solving the equation $K\cos \theta_0 - \cos(\alpha - \theta_0) = 0$ yields
+%
+\begin{align*}
+\alpha_1 & = \theta_0 - \arccos(K \cos \theta_0) \\
+\alpha_2 & = \theta_0 + \arccos(K \cos \theta_0)
+\end{align*}
+%
+\item[b.] Solving the equation $K\sin \theta_0 + \sin(\alpha -\theta_0) = 0$ yields
+%
+\begin{align*}
+\alpha_3 & = \theta_0 - \arcsin(K \sin \theta_0) \\
+\alpha_4 & = \pi + \theta_0 + \arcsin(K \sin \theta_0)
+\end{align*}
+%
+\end{enumerate}
+These solutions are valid for \dots
 
 
 
