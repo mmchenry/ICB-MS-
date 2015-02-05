@@ -72,16 +72,16 @@ Prey fish will generally initiate a high-speed escape response if they detect an
 
 The Homicidal Chauffeur is the colorful title for a class of pursuit game models that have been applied to predator-prey interactions (Isaacs, 1975). These models consider the trajectories of both players and thereby address the implications of directional decision-making to the outcome of an interaction. Weihs and Webb (1984) adopted the Homicidal Chauffeur to a consideration of prey fish that attempt to survive an encounter with a predator fish, but the model was offered in a general form that could easily be applied to a variety of biological systems. 
 
-This model focuses on the distance between between the predator and prey. In the rapid events of a predatory strike, it is reasonable to approximate the predator's motion as with a constant velocity $U$. If we assume that the prey's fast start may similarly be abstracted as a constant velocity, $V$, then the following equation characterizes the distance between predator and prey over time:
+This model focuses on the distance between the predator and prey. In the rapid events of a predatory strike, it is reasonable to approximate the predator's motion as with a constant velocity $U$. If we assume that the prey's fast start may similarly be abstracted as a constant velocity, $V$, then the following equation characterizes the distance between predator and prey over time:
 %
 \begin{equation}
 D^2 = ((X_0 - Ut) + Vt\cos\alpha)^2 + (Y_0  + Vt\sin\alpha)^2,
 \label{dist}
 \end{equation}
 %
-where $\alpha$ is the escape angle, and $X_0$ and  $Y_0$ are the starting coordinates for the prey. These parameters for the prey are defined in a frame of reference with an its origin at the predator's mouth for $t$ = 0 and an $X$-axis that is coincident with the predator's velocity (Fig. 1A). Weihs and Webb considered only the case where the prey initiates its escape directly in front of a predator (i.e. $Y_0=0$), which is mathematically more elegant and yields similar results to prey positioned slightly lateral to the predator's mouth. Nonetheless, we have expanded this analysis for $Y_0>0$ (see supplemental materials) to compare the model's predictions with measurements on prey that begin in a variety of positions.
+where $\alpha$ is the escape angle, and $X_0$ and  $Y_0$ are the starting coordinates for the prey. These parameters for the prey are defined in a frame of reference with its origin at the predator's mouth for $t$ = 0 and an $X$-axis that is coincident with the predator's velocity (Fig. 1A). Weihs and Webb considered only the case where the prey initiates its escape directly in front of a predator (i.e. $Y_0=0$), which is mathematically more elegant and yields similar results to prey positioned slightly lateral to the predator's mouth. Nonetheless, we have expanded this analysis for $Y_0>0$ (see supplemental materials) to compare the model's predictions with measurements on prey that begin in a variety of positions.
 
-The Homicidal Chauffeur is like other game models that focus on an outcome indicated by a single parameter, called the payoff. The payoff defines the beneficial or detrimental consequences of playing the game with a particular strategy (CITE). In piscivorous interactions, the payoff has been defined as the minimum distance between predator and prey over time because it is where the predator has the best opportunity to capture the prey (Weihs and Webb, 1984). The time at which the minimum distance occurs, $t_{min}$, may be found from the roots of the second derivative of Eqn. \ref{dist} with respect to time. This yields the following solution (Weihs and Webb, 1984):
+The Homicidal Chauffeur is like other game models that focus on an outcome indicated by a single parameter, called the payoff. The payoff defines the beneficial or detrimental consequences of playing the game with a particular strategy (CITE). In piscivorous interactions, the payoff has been defined as the minimum distance between predator and prey over time because it is where the predator has the best opportunity to capture the prey (Weihs and Webb, 1984). The time at which the minimum distance occurs, $t_{min}$, may be found from the root of the first derivative of Eqn. \ref{dist} with respect to time. This yields the following solution (Weihs and Webb, 1984):
 %
 \begin{equation}
 t_{min} = \frac{X_0}{V} \frac{K-\cos\alpha}{1-2 K\cos\alpha+K^2},
@@ -91,11 +91,11 @@ t_{min} = \frac{X_0}{V} \frac{K-\cos\alpha}{1-2 K\cos\alpha+K^2},
 where $K$ indicates the speed of the predator relative to the prey: $K = U/V$. The authors observed that this equation yields negative values where $K<1$ and is therefore only useful when the predator is faster than the prey. For these conditions, the minimum distance was determined by solving for the distance (Eqn. \ref{dist}) at $t_{min}$, which yields the following relationship (Weihs and Webb,1984):
 %
 \begin{equation}
-\frac{D^2_{min}}{X_0} = \frac{\sin^2\alpha}{K^2 - 2K \cos\alpha + 1}.
+\frac{D^2_{min}}{X_0^2} = \frac{\sin^2\alpha}{K^2 - 2K \cos\alpha + 1}.
 \label{dmin}
 \end{equation}
 
-Game models offer the opportunity to determine optimal strategies under the rules of a particular game. For this game, the optimal strategy for the prey is that which maximizes the distance from the predator. This may be determined by finding the direction of the fast start that maximizes Eqn. \ref{dmin}. This occurs where the second derivative of the minimum distance with respect to $\alpha$ is equal to zero, which is explicitly described by the following (Weihs and Webb,1984):
+Game models offer the opportunity to determine optimal strategies under the rules of a particular game. For this game, the optimal strategy for the prey is that which maximizes the minimum distance from the predator. This may be determined by finding the direction of the fast start that maximizes Eqn. \ref{dmin}. This occurs where the first derivative of the minimum distance with respect to $\alpha$ is equal to zero, which is explicitly described by the following (Weihs and Webb,1984):
 %
 \begin{equation}
 \frac{2\sin\alpha \cos\alpha (K^2 -2 K \cos\alpha+1)-2 K \sin^3\alpha}{(K^2-2 K \cos\alpha + 1)^2} = 0. 
@@ -109,13 +109,13 @@ Among the solutions that satisfy this equation, Webb and Weihs proposed that the
 \label{K>1}
 \end{equation}
 %
-Therefore, one would predict that a relatively slow prey will optimally escape in the direction predicted by Eqn. \ref{K>1}, provided that the locomotor system is capable and the velocity of the predator may be detected. Weihs and Webb further suggested that the optimal solution for prey capable of moving as fast or faster than the predator ($K\leq1$) will optimally move directly away from the predator ($\alpha = 0$) (Webb and Weihs, 1984). Although this makes intuitive sense, we have found that other directions are equally effective, as we describe below. 
+Therefore, one would predict that a relatively slow prey will optimally escape in the direction predicted by Eqn. \ref{K>1}, provided that the locomotor system is capable and the velocity of the predator may be detected. Weihs and Webb further suggested that the optimal solution for prey capable of moving as fast or faster than the predator ($K\leq1$) is to move directly away from the predator ($\alpha = 0$) (Webb and Weihs, 1984). Although this makes intuitive sense, we have found that other directions are equally effective, as we describe below. 
 
 
 % --------------------------------------------------------------------------------
 \section{The Homicidal Chauffeur, revisited.}
 
-We propose an analysis of the Homicidal Chauffeur that offers interpretations of optimal strategy that differ from those proposed by Weihs and Webb. This analysis focuses on how the minimum distance varies with the predator speed and escape angle, which we determined with a simple numerical approach in Matlab (MathWorks, Natick, MA, USA), but could be executed in a spreadsheet. Upon defining a series of time values at equal intervals, the position of the predator ($X = Ut$, $Y = 0$) and prey ($X=V\cos\alpha,Y=V\sin\alpha$) may be calculated as a basis for finding the distance between them (Eqn. \ref{dist}). The minimum distance can be determined in this way for variable escape angle and relative speed over a range of $K$ and $\alpha$ values (Fig. \ref{weihs_topo}B). This yields results that are coincident with the analytical expression for $D_{min}$ where $K>1$ (Eqn. \ref{dmin}), Weihs and Webb, 1984), but also defines variation for slower predators (i.e. $K<1$). The resulting parameter space illustrates what values for the escape angle and approach speeds that have a large effect on $D_{min}$.
+We propose an analysis of the Homicidal Chauffeur that offers interpretations of optimal strategy that differ from those proposed by Weihs and Webb. This analysis focuses on how the minimum distance varies with the predator speed and escape angle, which we determined with a simple numerical approach in Matlab (MathWorks, Natick, MA, USA), but could be executed in a spreadsheet. Upon defining a series of time values at equal intervals, the position of the predator ($X = Ut$, $Y = 0$) and prey ($X=Vt\cos\alpha,Y=Vt\sin\alpha$) may be calculated as a basis for finding the distance between them (Eqn. \ref{dist}). The minimum distance can be determined in this way for variable escape angle and relative speed over a range of $K$ and $\alpha$ values (Fig. \ref{weihs_topo}B). This yields results that are coincident with the analytical expression for $D_{min}$ where $K>1$ (Eqn. \ref{dmin}), (Weihs and Webb, 1984), but also defines variation for slower predators (i.e. $K<1$). The resulting parameter space illustrates what values for the escape angle and approach speeds that have a large effect on $D_{min}$.
 
 This analysis suggests that the fast start is unlikely to be effective at any escape angle when a prey is approached by a very fast predator. For example, if a predator is an order of magnitude faster than its prey (i.e. $K=10$), then the prey can do no better than displace its body by $10\%$ of its initial distance from the predator (Fig. \ref{weihs_topo}B). In addition, differences in escape angle have little effect on the minimum distance. An escape of  XX\textdegree\hspace{2pt} yields a minimum distance that is only 1\% less than the optimal escape at XX\textdegree. These metrics become increasingly unfavorable for the prey when approached by faster predators (Fig. \ref{weihs_topo}B). At these speeds, inaccuracy in the feeding strike may be a more decisive factor to prey survivorship than anything the prey may do in response (CITE).
 
@@ -141,7 +141,30 @@ Therefore, if the escape response of a prey is capable of exceeding the approach
 
 We formulated the Homicidal Chauffeur model to relate experimental responses to the model's predictions. We were particularly interested in testing the model with recent experiments that we performed (Stewart and McHenry, 2014) using a robotic predator, with zebrafish larvae as prey. This approach allowed for the presentation of consistent stimulus using a predator with a controlled approach speed. 
 
-One discrepancy between the model and our experiments is that the prey fish generally did not respond directly along the heading of the predator robot (Stewart and McHenry, 2014) . We therefore formulated the model for $Y_0>0$ by  . . .
+One discrepancy between the model and our experiments is that the prey fish generally did not respond directly along the heading of the predator robot (Stewart and McHenry, 2014). We therefore considered the distance function Eqn. \ref{dist} for $Y_0>0$. Following a similar procedure as Weihs and Webb, we arrive at a minimum distance function given by
+% 
+\begin{equation}
+\ol D^2_{min}=\frac{(K Y_0+X_0 \sin \alpha -Y_0\cos \alpha)^2}{K^2-2 K \cos \alpha +1}. 
+\label{new_Dmin}
+\end{equation}
+%
+We can eliminate a parameter in Eqn. \ref{new_Dmin} by redefining the equation in a polar coordinate system $(R, \theta)$. We do this by setting $R_0^2 = X_0^2 + Y_0^2$ and $\theta_0 = \arctan(Y_0/X_0)$, which yields
+%
+\begin{equation}
+\widetilde{D}^2_{min}= \ds\frac{\ol{D}^2_{min}}{R_0^2 }=
+\ds\frac{\left ( \sin(\alpha - \theta_0) + K \sin \theta_0 \right )^2}{K^2-2 K \cos \alpha +1} 
+\label{Dmin_polar}
+\end{equation}
+%
+We find the optimal escape angle $\alpha$ by solving the following:
+%
+\begin{equation}
+0 = \frac{\d \widetilde{D}^2_{min}}{\d \alpha} = 
+\frac{2(K \cos \alpha - 1)(K\cos \theta_0 - \cos(\alpha - \theta_0))(K\sin \theta_0 + \sin(\alpha -\theta_0))}
+{(K^2 - 2K \cos \alpha + 1)^2}
+\end{equation} 
+%
+The solutions to this equation are given by \dots
 
 
 
@@ -195,6 +218,78 @@ Using the condition on $\cos\alpha$ given in equation \eqref{cosinebound} leads 
 
 This shows that the distance function is always in increasing. Thus, the minimum occurs at $t=0$ and is $D^2 = X_0^2 = 1.$
 
+%-------Older text on y-displacement----------------------------- 
+\subsection{[Earlier version]--Distance Function with Initial y--displacement}
+The distance function \eqref{dist} is based on the assumption that a predator is heading in the direction of the prey. A slight modification of the distance function is necessary to model a predator that does not perfectly align its motion with the prey's direction. The modified distance function is given by    
+%
+\begin{equation}
+\ol D^2 = ((X_0 - Ut) + Vt\cos\alpha)^2 + (Y_0 + Vt\sin\alpha)^2
+\label{y_dist}
+\end{equation}
+%
+A similar analysis as above leads us to the minimum distance function
+%
+\begin{equation}
+\ol D^2_{min}=\frac{(K Y_0+X_0 \sin \alpha -Y_0\cos \alpha)^2}{K^2-2 K \cos \alpha +1} 
+\label{newDmin2}
+\end{equation}
+%
+Note that this function now depends on the parameters $K$, $X_0$, and $Y_0$, whereas in the simpler case the only parameter was $K$. To maximize $\ol D^2_{min}$ as a function of $\alpha$, we solve
+% 
+\begin{equation}
+0 = \frac{\d \ol D^2_{min}}{\d \alpha} = \frac{2(K \cos \alpha - 1)
+	(K Y_0 - Y_0 \cos \alpha + X_0 \sin\alpha)(K X_0 - X_0 \cos \alpha - Y_0 \sin \alpha)}
+	{(K^2 - 2K \cos \alpha + 1)^2}
+\label{newDmin_dalpha}	
+\end{equation}
+%
+We need only to consider the numerator as the denominator is zero only when $K = \cos \alpha = 1$ and represents the case in which the predator and prey travel at the same speed and in the same direction. There are three cases to consider and each may lead to several possible solutions.
+% 
+\subsubsection{Case 1}
+We first consider $K \cos \alpha - 1=0$. The solution in this case is $\alpha = \arccos(1/K)$ and is only valid for $K\geq 1$. This is also one of the solutions found by Weihs and Webb.
+%
+\subsubsection{Case 2}
+Next we consider the equation 
+%
+\begin{equation}
+K Y_0 - Y_0 \cos \alpha + X_0 \sin\alpha = 0.
+\end{equation}
+%
+There are four possible solutions 
+%
+\begin{equation}
+\alpha = \pm \arccos \left( \frac{K Y_0^2 \pm X_0 
+\ds\sqrt{Y_0^2(1- K^2) + X_0^2 }}{X_0^2+Y_0^2} \right )
+\end{equation}
+%	
+\subsubsection{Case 3}
+For the final case we consider the equation 
+%
+\begin{equation}
+K X_0 - X_0 \cos \alpha - Y_0 \sin\alpha = 0.
+\end{equation}
+%
+Again, there are four possible solutions
+%
+\begin{equation}
+\alpha = \pm \arccos \left( \frac{K X_0^2 \pm Y_0 
+\ds \sqrt{X_0^2(1-K^2) +Y_0^2}}{X_0^2+Y_0^2} \right )
+\end{equation}
+%
+
+The solutions found above for Case 2 and Case 3 can be organized into those which yield positive escape angles ($+ \arccos$) and those which yield negative escape angles. For Case 2, the positive optimal escape angles are 
+%
+\begin{align}
+\alpha_{1} =  \arccos \left( \frac{K Y_0^2 +X_0 
+\ds\sqrt{Y_0^2(1- K^2) + X_0^2 }}{X_0^2+Y_0^2} \right )
+\tag{15a} \label{root_a} \\
+\alpha_{2} = \arccos \left(\frac{K Y_0^2 - X_0 
+\ds\sqrt{Y_0^2(1- K^2) + X_0^2 }}{X_0^2+Y_0^2} \right )
+\tag{15b} \label{root_b}
+\end{align}
+%
+Both $\alpha_1$ and $\alpha_2$ are valid for values of $K$ that satisfy 
+$0< K \leq \ds \frac{\sqrt{X_0^2 + Y_0^2}}{Y_0}.$
 
 
 
@@ -206,7 +301,7 @@ This shows that the distance function is always in increasing. Thus, the minimum
 
 \begin{figure}[t!]
 \begin{centering}
-\includegraphics[width=1\textwidth]{Fig_01.pdf}
+%\includegraphics[width=1\textwidth]{Fig_01.pdf}
 \centering	
 \caption{\textbf{The Homicidal Chauffeur model, applied to prey strategy.} \textbf{(A)} Simulations predict the direction of a prey's fast start relative to initial position and velocity of a predator. \textbf{(B)} Numerical simulations were run at varying escape angle and predator approach speed to examine variation in the minimum distance. At $K>1$, the optimal angle }
 \label{weihs_topo}
