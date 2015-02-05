@@ -1,0 +1,28 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Domenici and Blagburn(2011)}]{Domenici:2011tv}
+\textbf{Domenici, P. and Blagburn, J.~M.} (2011).
+\newblock {Animal escapology I: theoretical issues and emerging trends in
+  escape trajectories}.
+\newblock \emph{J. Exp. Biol.} \textbf{214}, 2463--2473.
+
+\bibitem[{Isaacs(1965)}]{Isaacs:1965va}
+\textbf{Isaacs, R.} (1965).
+\newblock \emph{{Differential Games: A Mathematical Theory with Applications to
+  Warfare and Pursuit, Control and Optimization}}.
+\newblock New York: John Wiley and Sons, Inc.
+
+\bibitem[{Stewart et~al.(2014)Stewart, Nair, Jiang and
+  McHenry}]{Stewart:2014cm}
+\textbf{Stewart, W.~J., Nair, A., Jiang, H. and McHenry, M.~J.} (2014).
+\newblock {Prey fish escape by sensing the bow wave of a predator}.
+\newblock \emph{J. Exp. Biol.} \textbf{217}, 4328--4336.
+
+\bibitem[{Weihs and Webb(1984)}]{Weihs:1984tb}
+\textbf{Weihs, D. and Webb, P.~W.} (1984).
+\newblock {Optimal avoidance and evasion tactics in predator-prey
+  interactions}.
+\newblock \emph{J. Theor. Biol.} \textbf{106}, 189--206.
+
+\end{thebibliography}
