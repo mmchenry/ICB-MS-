@@ -5,37 +5,37 @@ The style file: ../jxb.bst
 Database file #1: ../refs.bib
 You've used 16 entries,
             2881 wiz_defined-function locations,
-            687 strings with 6922 characters,
-and the built_in function-call counts, 9600 in all, are:
+            687 strings with 6923 characters,
+and the built_in function-call counts, 9603 in all, are:
 = -- 818
 > -- 413
 < -- 10
 + -- 341
 - -- 117
-* -- 692
+* -- 693
 := -- 1433
 add.period$ -- 48
 call.type$ -- 16
 change.case$ -- 113
 chr.to.int$ -- 15
 cite$ -- 16
-duplicate$ -- 641
-empty$ -- 693
+duplicate$ -- 642
+empty$ -- 694
 format.name$ -- 165
-if$ -- 1890
+if$ -- 1891
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 139
 newline$ -- 84
 num.names$ -- 64
-pop$ -- 343
+pop$ -- 342
 preamble$ -- 1
 purify$ -- 103
 quote$ -- 0
-skip$ -- 279
+skip$ -- 278
 stack$ -- 0
 substring$ -- 437
-swap$ -- 330
+swap$ -- 331
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0

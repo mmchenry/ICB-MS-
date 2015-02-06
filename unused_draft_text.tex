@@ -121,3 +121,45 @@ The solutions found above for Case 2 and Case 3 can be organized into those whic
 %
 Both $\alpha_1$ and $\alpha_2$ are valid for values of $K$ that satisfy 
 $0< K \leq \ds \frac{\sqrt{X_0^2 + Y_0^2}}{Y_0}.$
+
+
+
+
+We were then able to normalize the the initial position with respect to the distance from the predator by converting this equation to polar coordinates $(R, \theta)$. This was achieved by setting $R_0^2 = X_0^2 + Y_0^2$ and $\theta_0 = \arctan(Y_0/X_0)$, which yielded the following:
+%
+\begin{equation}
+\ol{D}^2_{min}= \ds\frac{{D}^2_{min}}{R_0^2 }=
+\ds\frac{\left ( \sin(\alpha - \theta_0) + K \sin \theta_0 \right )^2}{K^2-2 K \cos \alpha +1} 
+\label{Dmin_polar}
+\end{equation}
+%
+%TODO:Check with Alberto about my changes to the definition of normalized Dmin
+As for Eqn. \ref{eq37weihs}, we found the optimal escape angle $\alpha$ by finding the conditions where the second derivative of the minimum distance with respect to alpha was equal to zero:
+%
+\begin{equation}
+0 = \frac{\d \ol{D}^2_{min}}{\d \alpha} = 
+\frac{2(K \cos \alpha - 1)(K\cos \theta_0 - \cos(\alpha - \theta_0))(K\sin \theta_0 + \sin(\alpha -\theta_0))}
+{(K^2 - 2K \cos \alpha + 1)^2}
+\end{equation} 
+%
+The solutions to this equation are given by \dots
+\begin{enumerate}
+\item[a.] Solving the equation $K\cos \theta_0 - \cos(\alpha - \theta_0) = 0$ yields
+%
+\begin{align*}
+\alpha_1 & = \theta_0 - \arccos(K \cos \theta_0) \\
+\alpha_2 & = \theta_0 + \arccos(K \cos \theta_0)
+\end{align*}
+%
+\item[b.] Solving the equation $K\sin \theta_0 + \sin(\alpha -\theta_0) = 0$ yields
+%
+\begin{align*}
+\alpha_3 & = \theta_0 - \arcsin(K \sin \theta_0) \\
+\alpha_4 & = \pi + \theta_0 + \arcsin(K \sin \theta_0)
+\end{align*}
+%
+\end{enumerate}
+These solutions are valid for \dots
+
+
+
