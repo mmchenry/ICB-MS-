@@ -42,6 +42,20 @@
 
 \tableofcontents
 % --------------------------------------------------------------------------------
+\section{Intro to Discussion?}
+
+
+There are a number of features of piscivorous interactions which have yet to receive the attention of theoreticians and therefore have unclear strategic implications. For example, pursuit games often assume that both pursuer and evader possess perfect information, which is analogous to formulating strategy in a chess match \citep{Salen:2004wp}. In contrast, predator-prey interactions may proceed more like a game of cards, where both players possess partial information about the state and capabilities of their opponent. Therefore, sensory systems may constrain the ability to conform to an optimal strategy or different optima may be possible for a player operating with imperfect information. 
+
+Mechanical constraints may also inform the strategy of predators and prey. The performance of motor systems is constrained by neuro--muscular physiology and, in the case of fish, hydrodynamics. The mechanics of suction feeding offers some strategic constraints on the predator. The impulsive burst of low pressure that a predator generates for suction feeding is limited in duration to tens of milliseconds  by the finite expansion permitted by the buccal cavity \citep{Wainwright:2001ufa}. In addition, the pressure gradient that captures prey is only effective in a small region (about one-half of the gape diameter) in front of the mouth \citep{Day:2005p5856}. These spatial and temporal restrictions appear to necessitate high accuracy in strike targeting and may explain why a large diversity of predators slowly glide, or brake, on their approach toward prey \citep{Higham:2005iu, Higham:2007go}. 
+
+
+Prey fish will generally initiate a high-speed escape response if they detect an approaching predator. This fast start escape consists of curling the body into a âCâ shape (Stage 1) and then unfurling (Stage 2) to initiate high-speed swimming \citep{D:1973up}. The neurophysiology of the fast start has offered an prolific model on vertebrate motor control (CITE) and some investigators have considered the strategic implications of fast-start kinematics \citep[reviewed by][]{Domenici:2011tv, Domenici:2011vl}. However, it remains unclear how the direction of a fast start affects a prey's probability of surviving an encounter with a predatory fish. 
+
+
+
+
+% --------------------------------------------------------------------------------
 \section{[Text from earlier versions]}
 
 
@@ -163,6 +177,48 @@ The solutions found above for Case 2 and Case 3 can be organized into those whic
 %
 Both $\alpha_1$ and $\alpha_2$ are valid for values of $K$ that satisfy 
 $0< K \leq \ds \frac{\sqrt{X_0^2 + Y_0^2}}{Y_0}.$
+
+
+
+
+We were then able to normalize the the initial position with respect to the distance from the predator by converting this equation to polar coordinates $(R, \theta)$. This was achieved by setting $R_0^2 = X_0^2 + Y_0^2$ and $\theta_0 = \arctan(Y_0/X_0)$, which yielded the following:
+%
+\begin{equation}
+\ol{D}^2_{min}= \ds\frac{{D}^2_{min}}{R_0^2 }=
+\ds\frac{\left ( \sin(\alpha - \theta_0) + K \sin \theta_0 \right )^2}{K^2-2 K \cos \alpha +1} 
+\label{Dmin_polar}
+\end{equation}
+%
+%TODO:Check with Alberto about my changes to the definition of normalized Dmin
+As for Eqn. \ref{eq37weihs}, we found the optimal escape angle $\alpha$ by finding the conditions where the second derivative of the minimum distance with respect to alpha was equal to zero:
+%
+\begin{equation}
+0 = \frac{\d \ol{D}^2_{min}}{\d \alpha} = 
+\frac{2(K \cos \alpha - 1)(K\cos \theta_0 - \cos(\alpha - \theta_0))(K\sin \theta_0 + \sin(\alpha -\theta_0))}
+{(K^2 - 2K \cos \alpha + 1)^2}
+\end{equation} 
+%
+The solutions to this equation are given by \dots
+\begin{enumerate}
+\item[a.] Solving the equation $K\cos \theta_0 - \cos(\alpha - \theta_0) = 0$ yields
+%
+\begin{align*}
+\alpha_1 & = \theta_0 - \arccos(K \cos \theta_0) \\
+\alpha_2 & = \theta_0 + \arccos(K \cos \theta_0)
+\end{align*}
+%
+\item[b.] Solving the equation $K\sin \theta_0 + \sin(\alpha -\theta_0) = 0$ yields
+%
+\begin{align*}
+\alpha_3 & = \theta_0 - \arcsin(K \sin \theta_0) \\
+\alpha_4 & = \pi + \theta_0 + \arcsin(K \sin \theta_0)
+\end{align*}
+%
+\end{enumerate}
+These solutions are valid for \dots
+
+
+
 
 \section{Distance function in Polar Coordinates}
 We can simplify the analysis by rewriting Eqn. \ref{eq:YDist} in polar coordinates $(R,\theta)$. We do this by setting $R_0^2 = X_0^2 + Y_0^2,$ and $\theta_0 = \arctan(Y_0/X_0)$. This yields 

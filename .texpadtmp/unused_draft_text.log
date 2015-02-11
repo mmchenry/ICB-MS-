@@ -1,0 +1,141 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdftex 2014.5.25)  9 FEB 2015 15:53
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex"
+(/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex
+/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex:3: Undefined control sequence.
+l.3 \section
+            {Intro to Discussion?}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex:6: Undefined control sequence.
+l.6 ...ormulating strategy in a chess match \citep
+                                                  {Salen:2004wp}. In contras...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex:8: Undefined control sequence.
+l.8 ...nsion permitted by the buccal cavity \citep
+                                                  {Wainwright:2001ufa}. In a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex:8: Undefined control sequence.
+l.8 ...gape diameter) in front of the mouth \citep
+                                                  {Day:2005p5856}. These spa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex:8: Undefined control sequence.
+l.8 ...brake, on their approach toward prey \citep
+                                                  {Higham:2005iu, Higham:200...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no Â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ˜ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ™ in font cmr10!
+/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex:11: Undefined control sequence.
+l.11 ... 2) to initiate high-speed swimming \citep
+                                                  {D:1973up}. The neurophysi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex:11: Undefined control sequence.
+l.11 ...plications of fast-start kinematics \citep
+                                                  [reviewed by][]{Domenici:2...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex:17: Undefined control sequence.
+l.17 \section
+             {[Text from earlier versions]}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex:26: Undefined control sequence.
+l.26 \begin
+           {equation}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex:27: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \leq 
+l.27 0 \leq
+            \alpha \leq \arccos(K).
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex:28: Undefined control sequence.
+l.28 \label
+           {anglerange}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/unused_draft_text.tex:29: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \end 
+l.29 \end
+         {equation}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] )</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "/Users/mmchenry/Documents/Manuscripts/ICB with Alberto/.texpadtmp/unused_draft_text.pdf" (1 page, 49011 bytes).
+PDF statistics:
+ 24 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
