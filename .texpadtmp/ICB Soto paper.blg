@@ -10,45 +10,45 @@ I was expecting a `,' or a `}'---line 8 of file ../refs.bib
 I'm skipping whatever remains of this entry
 Database file #2: ../refs2.bib
 Warning--empty journal in Arnott:1999wx
-You've used 26 entries,
+You've used 28 entries,
             2881 wiz_defined-function locations,
-            773 strings with 8865 characters,
-and the built_in function-call counts, 16085 in all, are:
-= -- 1408
-> -- 689
-< -- 15
-+ -- 572
-- -- 195
-* -- 1180
-:= -- 2392
-add.period$ -- 77
-call.type$ -- 26
-change.case$ -- 190
-chr.to.int$ -- 26
-cite$ -- 27
-duplicate$ -- 1062
-empty$ -- 1138
-format.name$ -- 275
-if$ -- 3163
+            786 strings with 9218 characters,
+and the built_in function-call counts, 17364 in all, are:
+= -- 1525
+> -- 742
+< -- 16
++ -- 616
+- -- 210
+* -- 1278
+:= -- 2580
+add.period$ -- 83
+call.type$ -- 28
+change.case$ -- 205
+chr.to.int$ -- 28
+cite$ -- 29
+duplicate$ -- 1146
+empty$ -- 1226
+format.name$ -- 298
+if$ -- 3414
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 224
-newline$ -- 133
-num.names$ -- 104
-pop$ -- 533
+missing$ -- 241
+newline$ -- 143
+num.names$ -- 112
+pop$ -- 572
 preamble$ -- 1
-purify$ -- 169
+purify$ -- 182
 quote$ -- 0
-skip$ -- 448
+skip$ -- 481
 stack$ -- 0
-substring$ -- 803
-swap$ -- 563
+substring$ -- 872
+swap$ -- 610
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 219
+type$ -- 237
 warning$ -- 1
-while$ -- 117
+while$ -- 127
 width$ -- 0
-write$ -- 333
+write$ -- 359
 (There was 1 error message)
