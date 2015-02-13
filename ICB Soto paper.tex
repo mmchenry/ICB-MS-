@@ -138,7 +138,7 @@ A different picture emerges when one considers prey that move more quickly than 
 A prey achieves an optimal escape ($\ol D_{\text{min}}=1$) when the distance function only increases as a function of time (i.e. $\frac{\d D^2}{\d t}\geq0$). This holds true for $\alpha=0$, which Weihs and Webb proposed as the optimal direction (Weihs and Webb, 1984). However, it also holds true that distance increases for another solution to Eqn. \ref{eq37weihs} ($\alpha= \pm \arccos K$) and all values in between. Therefore, the following defines the domain of optimal directions when the prey is faster than the predator ($K<1$):
 %
 \begin{equation}
--\arccos(K) \leq \alpha \leq \arccos(K).
+\ol D_{\text{min}}=1 \text{ if } -\arccos(K) \leq \alpha \leq \arccos(K).
 \label{anglerange}
 \end{equation}
 %
@@ -181,14 +181,10 @@ This solution indicates that the same optimal direction exists when the predator
 
 %
 \begin{equation}
-    0 \leq \alpha  \geq \theta_0 -\arccos(K \cos \theta_0))    \text{  if } \theta_0 < 0 ,
+\ol D_{\text{min}}=1 \text{ if }  0 \leq \alpha  \leq  |\theta_0 |  + \arccos(K \cos | \theta_0 |),
  \end{equation}
-\begin{equation}
-    0 \leq \alpha  \leq  \theta_0  + \arccos(K \cos \theta_0))    \text{  if } \theta_0 > 0 
-\end{equation}
 %
-
-This relationship demonstrates how the performance plateau reduces in area with increasing predator speed (Fig. \ref{our_topo}B). Therefore, fewer combinations of starting positions and escape angles yield equivalent escape performance for faster predators.
+This demonstrates that the performance plateau reduces in area with increasing predator speed (Fig. \ref{our_topo}B). Therefore, fewer combinations of starting positions and escape angles yield equivalent escape performance for faster predators.
 
 Using this formulation of the pursuit model, we evaluated how the measured responses of prey compared to the model predictions (Fig. \ref{our_topo}C). This comparison revealed that the vast majority of larvae responded at a position and with an escape direction that was predicted to yield maximal performance  ($\ol D_{\text{min}}=1$). This was true even at the fastest predator approach speed, where a larger number of individuals responded outside of the plateau.  According to the model's predictions, the large variation in observed escape direction incurs no penalty in the evasive performance of most larvae. 
 
