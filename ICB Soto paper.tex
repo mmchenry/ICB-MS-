@@ -38,8 +38,7 @@
 
 
 
-%\date{}                                           % Activate to display a
-given date or no date
+%\date{}            % Activate to display agiven date or no date
 
 \begin{document}
 \DeclareGraphicsExtensions{.eps,.pdf,.png,.gif,.jpg,.ps}
@@ -50,9 +49,7 @@ given date or no date
 
 
 % ABSTRACT
-%
--------------------------------------------------------------------------------
--
+%-------------------------------------
 \begin{abstract}
 
 Predator-prey interactions in fish are commonly studied with an interest in
@@ -81,9 +78,7 @@ survivorship.
 
 %TODO:Cite Holzmann SIFF paper
 
-%
--------------------------------------------------------------------------------
--
+%-------------------------------------
 \section{Introduction}
 \label{intro}
 
@@ -161,9 +156,7 @@ In this effort, we arrived at new interpretations of theory on prey evasion. In
 particular, we identified conditions where the escape direction is predicted to
 have little or no effect on the evasiveness of prey.
 
-%
--------------------------------------------------------------------------------
--
+%-------------------------------------
 \section{Optimal prey strategy}
 \label{opt_strategy}
 
@@ -214,10 +207,9 @@ t_{\text{min}} = \frac{X_0}{V} \frac{K-\cos\alpha}{1-2 K\cos\alpha+K^2},
 \end{equation}
 %
 where $K$ indicates the speed of the predator relative to the prey ($K = U/V$).
-Weihs and Webb observed that this equation yields negative values of time where
-$K<1$ and is therefore only useful when the predator is faster than the prey
-(Weihs and Webb, 1984). The minimum distance was consequently determined for
-$K>1$ by solving for distance (Eqn. \ref{dist}) at $t_{\text{min}}$:
+This equation is only valid for $K \geq 1$ because it yields negative
+values of time for $K<1$. The minimum distance was consequently determined
+ for $K>1$ by solving for distance (Eqn. \ref{dist}) at $t_{\text{min}}$:
 %
 \begin{equation}
 \ol D_{\text{min}}^2 = \frac{D_{\text{min}}^2}{X_0^2} = \frac{\sin^2\alpha}{K^2
@@ -256,9 +248,7 @@ swimming directly away from the predator ($\alpha = 0$)  (Weihs and Webb,
 a prey can direct its escape to maximize its chances for survival by creating
 the greatest distance from a predator. 
 
-%
--------------------------------------------------------------------------------
--
+%-------------------------------------
 \section{When optimal strategy matters}
 
 An optimum adopts a different meaning if it corresponds to a shallow peak in
@@ -340,9 +330,7 @@ deviating from the optimal angle (Fig. \ref{weihs_topo}B). Therefore, a prey
 fish has a strong incentive to conform to the optimal prediction when
 encountering a slightly faster predator.
 
-%
--------------------------------------------------------------------------------
--
+%-------------------------------------
 \section{Comparing models with measurements}
 
 We were interested in examining whether optimal strategy matters under
@@ -441,9 +429,7 @@ performance landscape. Therefore, the large variation in observed escape
 direction incurs no penalty in the evasive performance of most larvae. 
 
 
-%
--------------------------------------------------------------------------------
--
+%-------------------------------------
 \section{Predator strategy}
 
 Although the present pursuit models were formulated with a focus on prey fish,
@@ -487,10 +473,14 @@ angle and strike accuracy on evasion for different approach speeds. For a
 predator that is twice as fast as the prey, the minimum distance varies
 substantially with both escape direction and strike accuracy (Fig.
 \ref{k>1_topo}A). For example, the optimal escape angle
-($\alpha_{\text{opt}}=60.0$\textdegree) generates a minimum distance ($\ol
-D_{\text{min}}=0.71$) that is more than two-orders of magnitude better than
-what may be achieved with the least effective escape direction ($\ol
-D_{\text{min}}=0.002$) when the prey is positioned 15\textdegree\hspace{0.5pt}
+($\alpha_{\text{opt}}=60.0$\textdegree) 
+generates a minimum distance 
+($\ol D_{\text{min}}=0.71$) 
+that is more than two-orders of magnitude better
+thanwhat may be achieved with the least effective escape direction 
+($\ol D_{\text{min}}=0.002$) 
+when the prey is positioned 
+15\textdegree\hspace{0.5pt}
 from the predator's heading. This advantage in minumum distance is not greatly
 reduced ($\ol D_{\text{min}}=0.50$ at $\alpha_{\text{opt}}=60$\textdegree) if
 the predator successfully aligns its strike ($\theta_0=0$\textdegree). However,
@@ -505,9 +495,7 @@ D_{\text{min}}=0.10$) is relatively ineffective for an accurate strike
 becomes an increasingly dominant factor in determining prey survival with
 predators that are many times faster than the prey.
 
-%
--------------------------------------------------------------------------------
--
+%-------------------------------------
 \section{Conclusions}
 
 The present results offer a new perspective on predator-prey strategy. 
@@ -518,9 +506,7 @@ fish cannot move in an optimal direction that maximizes its distance from a
 predator if it cannot detect the predator's speed \citep{Weihs:1984tb}.
 
 % REFERENCES
-% 
--------------------------------------------------------------------------------
-
+%-------------------------------------
 \pagebreak
 
 \linespread 2
@@ -529,9 +515,7 @@ predator if it cannot detect the predator's speed \citep{Weihs:1984tb}.
 \bibliography{refs,refs2}   % References my library
 
 % FIGURES
-% 
--------------------------------------------------------------------------------
-
+%------------------------------------- 
 \linespread 1
 
 % FIG 1
