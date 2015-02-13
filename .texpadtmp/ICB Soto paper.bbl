@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Arnott et~al.(1999)Arnott, Neil and Ansell}]{Arnott:1999wx}
@@ -42,8 +42,8 @@
 \bibitem[{Domenici et~al.(2008)Domenici, Booth, Blagburn and
   Bacon}]{Domenici:2008kra}
 \textbf{Domenici, P., Booth, D., Blagburn, J.~M. and Bacon, J.~P.} (2008).
-\newblock {Cockroaches Keep Predators Guessing by Using Preferred Escape
-  Trajectories}.
+\newblock {Cockroaches keep predators guessing by using preferred escape
+  trajectories}.
 \newblock \emph{Curr. Biol.} \textbf{18}, 1792--1796.
 
 \bibitem[{Emlen(2014)}]{Emlen:2014wb}
@@ -70,6 +70,12 @@
 \newblock {Predator versus prey: on aerial hunting and escape strategies in
   birds}.
 \newblock \emph{Behavioral Ecology} \textbf{12}, 150--156.
+
+\bibitem[{Heuch et~al.(2007)Heuch, Doall and Yen}]{Heuch:2007kk}
+\textbf{Heuch, P.~A., Doall, M.~H. and Yen, J.} (2007).
+\newblock {Water flow around a fish mimic attracts a parasitic and deters a
+  planktonic copepod}.
+\newblock \emph{Journal Of Plankton Research} \textbf{29}, i3--i16.
 
 \bibitem[{Higham(2007)}]{Higham:2007go}
 \textbf{Higham, T.~E.} (2007).
@@ -100,6 +106,12 @@
 \newblock \emph{{Differential Games: A Mathematical Theory with Applications to
   Warfare and Pursuit, Control and Optimization}}.
 \newblock New York: John Wiley and Sons, Inc.
+
+\bibitem[{Kane and Zamani(2014)}]{Kane:2014fs}
+\textbf{Kane, S.~A. and Zamani, M.} (2014).
+\newblock {Falcons pursue prey using visual motion cues: new perspectives from
+  animal-borne cameras}.
+\newblock \emph{J. Exp. Biol} \textbf{217}, 225--234.
 
 \bibitem[{Kullberg et~al.(1998)Kullberg, Jakobsson and
   Fransson}]{Kullberg:1998ur}
