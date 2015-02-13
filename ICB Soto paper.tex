@@ -52,12 +52,13 @@
 % --------------------------------------------------------------------------------
 \begin{abstract}
 
-Piscivorous interactions are commonly studied with an interest in the optimal strategy of prey to evade predators. However, it is unclear when the optimal strategy is meaningful to prey survival. Here we examine the theoretical consequences of deviation from optimal strategy for predators that approach at different speeds. With a focus on the minimum distance between predator and prey, we simulated these interactions with numerical and analytical mathematics and compared our predictions with measurements in zebrafish (\textit{Danio rerio}). We found that differences in escape direction had only a small effect on the minimum distance when predators were more than an order of magnitude faster than the prey. Differences in direction had no effect on performance for a broad range of escape angles when the prey were faster than the predator, which is the case for zebrafish. Therefore, the escape angle either has no optimum or has a minor effect on predator-prey interactions in many situations where the predator is either slower or much faster than the prey. Optimal strategy is therefore most meaningful when prey are approached by a predator of intermediate speed. It remains to be seen whether prey behave optimally in this domain or whether optimal responses enhance survivorship.
+Predator-prey interactions in fish are commonly studied with an interest in determining whether prey adopt an optimal strategy to evade predators. However, it is not clear under what circumstances an optimal strategy aids a prey's survival. Here we examine the theoretical consequences of deviation from optimal strategy for predators that approach at different speeds. With a focus on the minimum distance between predator and prey, we simulated these interactions with numerical and analytical mathematics and compared our predictions with measurements in zebrafish (\textit{Danio rerio}). We found that differences in escape direction had only a small effect on the minimum distance when predators were more than an order of magnitude faster than the prey. Furthermore, differences in direction had no effect on performance for a broad range of escape angles when the prey were faster than the predator, which is the case for zebrafish. Therefore, the escape angle either has no optimum or has a minor effect on predator-prey interactions in many situations where the predator is either slower or much faster than the prey. Optimal strategy is therefore most meaningful when prey are approached by a predator of intermediate speed. It remains to be seen whether prey behave optimally in this domain or whether optimal responses serve to enhance survivorship.
 
 \end{abstract}
 
 \pagebreak
 
+%TODO:Cite Holzmann SIFF paper
 
 % --------------------------------------------------------------------------------
 \section{Introduction}
@@ -178,15 +179,14 @@ We found the solutions that satisfy this equation by setting the terms in the nu
 \end{equation} 
 %
 This solution indicates that the same optimal direction exists when the predator is faster than the prey, irrespective of the starting position of the prey. As detailed above, we found that the escape angle is equally effective (i.e. $\ol D_{\text{min}}=1$) when the prey is aligned with the predator for a broad range of values (Eqn. \ref{anglerange}). This result holds true when prey are positioned lateral to the predator, but this performance plateau depends on the initial angular position of the prey. We found that the following equation defines the  the bounds of this plateau among the solutions that satisfy Eqn. \ref{Dmin_polar} for $K<1$:
-
 %
 \begin{equation}
-\ol D_{\text{min}}=1 \text{ if }  0 \leq \alpha  \leq  |\theta_0 |  + \arccos(K \cos | \theta_0 |),
+\ol D_{\text{min}}=1 \text{ if }  0 \leq \alpha  \leq  [|\theta_0 |  + \arccos(K \cos | \theta_0 |)],
  \end{equation}
 %
 This demonstrates that the performance plateau reduces in area with increasing predator speed (Fig. \ref{our_topo}B). Therefore, fewer combinations of starting positions and escape angles yield equivalent escape performance for faster predators.
 
-Using this formulation of the pursuit model, we evaluated how the measured responses of prey compared to the model predictions (Fig. \ref{our_topo}C). This comparison revealed that the vast majority of larvae responded at a position and with an escape direction that was predicted to yield maximal performance  ($\ol D_{\text{min}}=1$). This was true even at the fastest predator approach speed, where a larger number of individuals responded outside of the plateau.  According to the model's predictions, the large variation in observed escape direction incurs no penalty in the evasive performance of most larvae. 
+Using this formulation of the pursuit model, we evaluated how the measured responses of prey compared to the model predictions (Fig. \ref{our_topo}C). This comparison revealed that the vast majority of larvae responded upon the performance plateau and therefore at a position and escape direction that was predicted to yield maximal performance  ($\ol D_{\text{min}}=1$). This was true even at the fastest predator approach speed ($K=0.90$), where a larger number of individuals responded outside of the plateau.  According to the model's predictions, the large variation in observed escape direction incurs no penalty in the evasive performance of most larvae. 
 
 % --------------------------------------------------------------------------------
 \section{???}
@@ -263,9 +263,9 @@ The model's assumptions could be violated by the system. For example, a prey fis
 \pagebreak
 \begin{figure}[t]
 \begin{centering}
-%\includegraphics[width=1\textwidth]{Fig_04.pdf}
+\includegraphics[width=1.1\textwidth]{Fig_04.pdf}
 \centering	
-\caption{\textbf{Model predictions and measurements of the fast start.} \textbf{(A)}  }
+\caption{\textbf{Title.} \textbf{(A)}  }
 \label{k>1_topo}
 \end{centering}
 \end{figure}
