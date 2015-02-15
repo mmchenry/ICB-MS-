@@ -1,0 +1,233 @@
+\documentclass[12pt]{article}
+
+% Load packages
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{epsf}
+\usepackage{epstopdf}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage[scaled=.90]{helvet} % Helvetica (currently not used)
+\usepackage[]{lineno} % For line numbers
+\usepackage{natbib}
+\usepackage{sidecap}
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% Define new commands and definitions
+\def\ds{\displaystyle}
+\def\d{\partial}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\nn}{\mathbb{N}}
+\newcommand{\ee}{\mathscr{E}}
+\newcommand{\mb}{\mathbf}
+\newcommand{\ol}{\overline}
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+
+% Text formatting
+\linespread{1.5}	
+\linenumbers
+
+\title{Escape direction does not matter for some fish prey}
+
+\author{Alberto Soto, William J. Stewart and Matthew J. McHenry\\
+  Department of Ecology \& Evolutionary Biology,\\
+  University of California, Irvine\\ \\ \\ \\}
+  
+%\date{}                                           % Activate to display a given date or no date
+
+
+\begin{document}
+\DeclareGraphicsExtensions{.eps,.pdf,.png,.gif,.jpg,.ps}
+
+\maketitle
+{\Large Supplemental Materials}
+
+\tableofcontents
+
+% --------------------------------------------------------------------------------
+\newpage
+\section{Performance Plateau when $K < 1$}
+In this is section, we provide details to show that when the prey is faster than the predator $(K<1)$, then there exists a performance plateau. That is, an equivalent greatest minimum distance is  achieved for a large range of escape angles $\alpha$. For escape angles in this range, the prey performs equally well.   
+
+\subsection{Distance increases for a range of $\alpha$ values}
+Here we show that the minimum distance function is not affected by a large range of escape angles. For reference, the distance function is given by the following equation:
+%
+\begin{equation}
+D^2 = ((X_0 - Ut) + Vt\cos\alpha)^2 + (Vt\sin\alpha)^2,
+\label{eq:WeihsDist}
+\end{equation}
+%
+where $X_0$ is the starting position of the prey. Note that at $t=0$, $D^2 = X_0^2.$ 
+
+For this case, we are interested in escape angles between the two solutions given by Weihs and Webb (1984)
+%
+\begin{equation}
+0 \leq \alpha \leq \arccos(K).
+\label{alpharange}
+\end{equation}
+The above leads to an important inequality given by
+\begin{equation}
+K \leq \cos\alpha \leq 1.
+\label{cosinebound}
+\end{equation} 
+This inequality plays a crucial role in the following analysis.      
+%
+To show that the minimum distance does not change for this range of escape angles and $K<1$, it suffices to show that the distance function is always increasing. That is, we want to show that the derivative of Eqn. \ref{eq:WeihsDist} with respect to time is greater than or equal to zero. 
+
+Taking the derivative with respect to time yields
+%
+\begin{equation}
+\frac{\d D^2}{\d t}  = 2(t(U^2+V^2) - UX_0 + V(X_0-2tU)\cos\alpha)
+\label{distderivative}
+\end{equation}  
+%
+Let $U=1$. Since $K = U/V,$ the assumption on the predator's speed leads to $V > 1.$ 
+Then equation \eqref{distderivative} becomes
+%
+\begin{equation}
+\frac{\d D^2}{\d t}  = 2(1+V^2-2V\cos\alpha)t + 2X_0(V\cos\alpha -1), 
+\label{eq:DLine}
+\end{equation}
+%
+which is a linear function in time. To show Eqn. \ref{eq:DLine} is nonnegative for $t\geq0$, it suffices to show that the slope is positive and the intercept (when $t=0$) is nonnegative. 
+%
+\begin{itemize}
+\item Positive slope; \\
+Eqn. \ref{cosinebound} implies $V\cos\alpha \leq V$. Multiplying by $-2$ and adding $1+V^2$ on both sides yields  
+\begin{equation}
+1+V^2 -2V \cos\alpha \geq 1 -2V + V^2 = (V-1)^2 > 0.
+\label{eq:slope}
+\end{equation}
+
+\item Nonnegative intercept; \\
+Here we simply need to show that $V\cos \alpha -1 \geq 0.$ From Eqn. \ref{cosinebound} we have:
+\begin{equation}
+K \leq \cos\alpha \implies 1 = VK \leq V\cos\alpha \implies 0 \leq V\cos \alpha - 1.
+\label{eq:intercept}
+\end{equation}  
+\end{itemize}
+%
+Eqns. \ref{eq:slope} and  \ref{eq:intercept} together show that the distance is always increasing for $0\leq \alpha \leq \arccos (K)$ and $K<1.$ An analogous argument applies for $-\arccos(K) \leq \alpha < 0.$ Thus, the minimum occurs at $t=0$ and is $D^2 = X_0^2.$ This defines a performance plateau for the prey as a wide range of angles yield equally successful ecapes. 
+
+
+
+% --------------------------------------------------------------------------------
+\section{Initial Lateral Displacement}
+The distance function given by Eqn. \ref{eq:WeihsDist} is based on the assumption that a predator is heading in the direction of the prey. To model a predator that does not perfectly align its motion with the prey's direction, as is presented in the main text for a robot predator, we introduce a lateral initial displacement. 
+
+\subsection{Distance function with initial lateral displacement}
+The distance function is now given by    
+%
+\begin{equation}
+D^2 = ((X_0 - Ut) + Vt\cos\alpha)^2 + (Y_0 + Vt\sin\alpha)^2.
+\label{eq:YDist}
+\end{equation}
+%
+In the following sections, we detail the steps for finding the optimal escape angle. Note that the introduction of $Y_0$ in the distance function allows us to rewrite the equation in polar coordinates. 
+
+\subsection{Minimum distance in polar coordinates}
+To simplify the forthcoming analysis, we rewrite Eqn. \ref{eq:YDist} in polar coordinates $(R,\theta)$. We do this by setting $R_0^2 = X_0^2 + Y_0^2,$ and $\theta_0 = \arctan(Y_0/X_0)$\footnote{For this analysis, we assume $Y_0 \geq 0$, but the final results are presented for the more general case.}. This yields 
+%
+\begin{equation}
+D_0^2 = R_0^2 + (1 + K^2) t^2 V^2 - 
+ 2 V t(K V t \cos \alpha  - R_0 \cos(\alpha - \theta_0) + K R_0 \cos \theta_0) 
+ \label{eq:Dpolar}
+\end{equation}
+%
+To find the time at which Eqn. \ref{eq:Dpolar} is minimized, we find the roots of the derivative of Eqn. \ref{eq:Dpolar} with respect to $t$ which yields
+%
+\begin{equation}
+t_{\text{min}} = \ds \frac{R_0}{V} \frac{\left[K \cos \theta_0 - \cos(\alpha - \theta_0)\right ]}{1- 2K \cos \alpha + K^2}
+\label{eq:tmin}
+\end{equation}
+%
+The above is negative when $K \cos \theta_0 < \cos(\alpha - \theta_0).$ Rewriting this inequality gives the range of $\alpha$ for which the distance is solely increasing. Explicitly, this is given by  
+%
+\begin{equation}
+\theta_0 - \arccos(K \cos \theta_0) < \alpha < \theta_0 + \arccos(K \cos \theta_0)
+\label{eq:alphabound}
+\end{equation}
+%
+For these values of $\alpha$, the minimum distance occurs at $t=0$ and is thus equal to the initial distance $R_0^2$. This defines a performance plateau when $K < 1.$
+
+If we now substitute $t_{\text{min}}$ for $t$ in Eqn. \ref{eq:Dpolar}, we get the minimum distance as a function of $\alpha$ with parameters $K$ and $\theta_0$. This is given by the following: 
+%
+\begin{equation}
+\ol{D}^2_{\text{min}}= \ds\frac{{D}^2_{\text{min}}}{R_0^2 }=
+\ds\frac{\left ( \sin(\alpha - \theta_0) + K \sin \theta_0 \right )^2}{K^2-2 K \cos \alpha +1} 
+\label{eq:Dmin_polar}
+\end{equation}
+%
+
+% --------------------------------------------------------------------------------
+\newpage
+\subsection{Greatest minimum distance: solving for $\alpha$}
+To find the escape angle which yields the largest minimum distance, we solve the following equation
+%
+\begin{equation}
+0 = \frac{\d \ol{D}^2_{\text{min}}}{\d \alpha} = 
+\frac{2(K \cos \alpha - 1)(K\cos \theta_0 - \cos(\alpha - \theta_0))(K\sin \theta_0 + \sin(\alpha -\theta_0))}
+{(K^2 - 2K \cos \alpha + 1)^2}
+\end{equation} 
+%
+The solutions to this equation are found by finding where the numerator is equal to zero which is done by considering the following three cases:
+%
+\begin{enumerate}
+\item[]{\bf Case 1:} Solving the equation $K \cos \alpha - 1 = 0$ yields
+\begin{equation*}
+\alpha_1 = \pm \arccos K^{-1}
+\end{equation*}
+This solution is valid for $K\geq1.$
+
+\item[]{\bf Case 2:} For the equation $K\cos \theta_0 - \cos(\alpha - \theta_0) = 0$ a more careful analysis (detailed below) is required since the solution can be a complex number for some combinations of $K$ and $\theta_0.$ Rewriting the equation yields 
+%
+\begin{equation}
+\cos(\alpha - \theta_0) = K\cos \theta_0.
+\label{eq:case2}
+\end{equation}
+%
+This equation gives the conditions that $K$ and $\theta_0$ must satisfy so that solutions are real--valued. Explicitly, the condition is given by the following
+%
+\begin{equation}
+ | K\cos \theta_0 | \leq 1
+ \label{eq:boundK}
+\end{equation}
+%
+When $K$ is between 0 and 1, Eqn. \ref{eq:boundK} is always satisfied. If, on the other hand, $K > 1$, then we must have that $| \cos \theta_0| \leq 1/K.$ This leads to the following bound for $\theta_0$:
+%
+\begin{equation}
+\arccos (K^{-1}) \leq \theta_0 \leq \arccos (-K^{-1})
+\label{eq:boundtheta0}
+\end{equation}
+
+Keeping these restrictions in mind we proceed to solve Eqn. \ref{eq:case2}. The solutions are given by
+\begin{align*}
+\alpha_2 & = \theta_0 + \arccos(K \cos \theta_0) \\
+\alpha_3 & = \theta_0 - \arccos(K \cos \theta_0)
+\end{align*}
+For $K<1,$ these solutions define the boundaries of the performance plateau. For $K>1$ the solutions are not optimal unless $\theta_0$ satisfies Eqn. \ref{eq:boundtheta0}.
+
+\item[]{\bf Case 3:} Solving the equation $K\sin \theta_0 + \sin(\alpha -\theta_0) = 0$ yields
+\begin{align*}
+\alpha_4 & = \theta_0 - \arcsin(K \sin \theta_0) \\
+\alpha_5 & = \pi + \theta_0 + \arcsin(K \sin \theta_0)
+\end{align*}
+For $K<1$, $\alpha_4$ is contained within the bounds defined by Eqn. \ref{eq:alphabound} and $\alpha_5$ is a local minimum. When $K>1$, the both solutions are local minimums and thus not optimal.     
+\end{enumerate}
+
+
+
+\end{document}
