@@ -9,6 +9,7 @@
 \usepackage{epstopdf}
 \usepackage{mathrsfs}
 \usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{textcomp}
 \usepackage[scaled=.90]{helvet} % Helvetica (currently not used)
@@ -16,14 +17,14 @@
 \usepackage{natbib}
 \usepackage{sidecap}
 
-\usepackage[hidelinks]{hyperref}
-\hypersetup{
-    colorlinks,
-    citecolor=black,
-    filecolor=black,
-    linkcolor=black,
-    urlcolor=black
-}
+%\usepackage[hidelinks]{hyperref}
+%\hypersetup{
+%    colorlinks,
+%    citecolor=black,
+%    filecolor=black,
+%    linkcolor=black,
+%    urlcolor=black
+%}
 
 % Define new commands and definitions
 \def\ds{\displaystyle}
@@ -83,11 +84,12 @@ The above leads to an important inequality given by
 K \leq \cos\alpha \leq 1.
 \label{cosinebound}
 \end{equation} 
-This inequality plays a crucial role in the following analysis.      
+This inequality plays a crucial role in the following proof.      
 %
 To show that the minimum distance does not change for this range of escape angles and $K<1$, it suffices to show that the distance function is always increasing. That is, we want to show that the derivative of Eqn. \ref{eq:WeihsDist} with respect to time is greater than or equal to zero. 
 
-Taking the derivative with respect to time yields
+\begin{proof} Assume that $K<1$ and that Eqn. \ref{cosinebound} holds. 
+Taking the derivative of Eqn. \ref{eq:WeihsDist} with respect to time yields
 %
 \begin{equation}
 \frac{\d D^2}{\d t}  = 2(t(U^2+V^2) - UX_0 + V(X_0-2tU)\cos\alpha)
@@ -120,13 +122,15 @@ K \leq \cos\alpha \implies 1 = VK \leq V\cos\alpha \implies 0 \leq V\cos \alpha 
 \end{equation}  
 \end{itemize}
 %
-Eqns. \ref{eq:slope} and  \ref{eq:intercept} together show that the distance is always increasing for $0\leq \alpha \leq \arccos (K)$ and $K<1.$ An analogous argument applies for $-\arccos(K) \leq \alpha < 0.$ Thus, the minimum occurs at $t=0$ and is $D^2 = X_0^2.$ This defines a performance plateau for the prey as a wide range of angles yield equally successful ecapes. 
+Eqns. \ref{eq:slope} and  \ref{eq:intercept} together show that the distance is always increasing for $0\leq \alpha \leq \arccos (K)$ and $K<1.$ 
+\end{proof}
+An analogous argument applies for $-\arccos(K) \leq \alpha < 0.$ The preceding proof shows that the minimum occurs at $t=0$ and is $D^2 = X_0^2.$ This defines a performance plateau for the prey as a wide range of angles yield equally successful escapes. 
 
 
 
 % --------------------------------------------------------------------------------
 \section{Initial Lateral Displacement}
-The distance function given by Eqn. \ref{eq:WeihsDist} is based on the assumption that a predator is heading in the direction of the prey. To model a predator that does not perfectly align its motion with the prey's direction, as is presented in the main text for a robot predator, we introduce a lateral initial displacement. 
+The distance function given by Eqn. \ref{eq:WeihsDist} is based on the assumption that a predator is heading in the direction of the prey. To model a predator that does not perfectly align its motion with the prey's direction, as is presented in the main text for a predator robot, we introduced a lateral initial displacement to the distance function. 
 
 \subsection{Distance function with initial lateral displacement}
 The distance function is now given by    
@@ -190,7 +194,7 @@ The solutions to this equation are found by finding where the numerator is equal
 \begin{equation*}
 \alpha_1 = \pm \arccos K^{-1}
 \end{equation*}
-This solution is valid for $K\geq1.$
+This solution is valid for $K\geq1.$ This solution indicates that prey are equally effective if escaping at an optimal angle toward the left ($\alpha>0$), or right ($\alpha<0$) of the predator's heading. 
 
 \item[]{\bf Case 2:} For the equation $K\cos \theta_0 - \cos(\alpha - \theta_0) = 0$ a more careful analysis (detailed below) is required since the solution can be a complex number for some combinations of $K$ and $\theta_0.$ Rewriting the equation yields 
 %
@@ -212,20 +216,26 @@ When $K$ is between 0 and 1, Eqn. \ref{eq:boundK} is always satisfied. If, on th
 \arccos (K^{-1}) \leq \theta_0 \leq \arccos (-K^{-1})
 \label{eq:boundtheta0}
 \end{equation}
-
-Keeping these restrictions in mind we proceed to solve Eqn. \ref{eq:case2}. The solutions are given by
+%
+Note that as the value of $K$ increases, the allowable range for $\theta_0$ decreases and approaches 90\textdegree. Keeping these restrictions in mind we proceed to solve Eqn. \ref{eq:case2}. The solutions are given by
 \begin{align*}
 \alpha_2 & = \theta_0 + \arccos(K \cos \theta_0) \\
 \alpha_3 & = \theta_0 - \arccos(K \cos \theta_0)
 \end{align*}
-For $K<1,$ these solutions define the boundaries of the performance plateau. For $K>1$ the solutions are not optimal unless $\theta_0$ satisfies Eqn. \ref{eq:boundtheta0}.
+For $K<1,$ the following equation defines the boundaries of the performance plateau. 
+%
+\begin{equation}
+\quad |\alpha - \theta_0|  \leq    \arccos(K \cos  \theta_0) ,
+ \end{equation}
+%
+For $K>1$ the solutions $\alpha_{2,3}$ are not optimal unless $\theta_0$ satisfies Eqn. \ref{eq:boundtheta0}. 
 
 \item[]{\bf Case 3:} Solving the equation $K\sin \theta_0 + \sin(\alpha -\theta_0) = 0$ yields
 \begin{align*}
 \alpha_4 & = \theta_0 - \arcsin(K \sin \theta_0) \\
 \alpha_5 & = \pi + \theta_0 + \arcsin(K \sin \theta_0)
 \end{align*}
-For $K<1$, $\alpha_4$ is contained within the bounds defined by Eqn. \ref{eq:alphabound} and $\alpha_5$ is a local minimum. When $K>1$, the both solutions are local minimums and thus not optimal.     
+For $K<1$, $\alpha_4$ is contained within the bounds defined by Eqn. \ref{eq:alphabound} and $\alpha_5$ is a local minimum. When $K>1$, the solutions are local minimums and thus not optimal.     
 \end{enumerate}
 
 
