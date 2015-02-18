@@ -52,17 +52,17 @@
 % --------------------------------------------------------------------------------
 \begin{abstract}
 
-Predator-prey interactions are commonly studied with an interest in determining whether prey adopt an optimal strategy to evade predators. However, the benefits of an optimal strategy are often unclear and adopting such behavior may incur costs to the prey.  
-Here we examine the theoretical consequences of deviating from optimal strategy in fish that are preyed upon by fish predators. We simulated these interactions with numerical and analytical mathematics and compared our predictions with measurements in zebrafish (\textit{Danio rerio}). As in previous models, we focused on the effect of the escape direction on the minimum distance between predator and prey.
-We found that differences in escape direction had only a small effect on the minimum distance when predators were more than an order of magnitude faster than the prey. Furthermore, differences in direction had no effect on performance for a broad range of escape angles when the prey were faster than the predator, which is the case for zebrafish. 
-Optimal strategy is therefore most meaningful to these prey when approached by a predator of intermediate speed.
-When the predator is either slower or much faster than the prey, optimal strategy may not exist or offer little benefit to predator evasion. 
+Predator-prey interactions are commonly studied with an interest in determining whether prey adopt an optimal strategy to evade predators. Here we examine the strategic consequences of deviating from optimal strategy in fish that are preyed upon by fish predators. 
+We simulated these interactions with numerical and analytical mathematics and compared our predictions with measurements in zebrafish (\textit{Danio rerio}). As in previous models, we focused on the effect of the escape direction on the minimum distance between predator and prey.
+We found that differences in escape direction had only a small effect on the minimum distance when predators were more than an order of magnitude faster than the prey. Furthermore, differences in direction had no effect on performance for a broad range of escape angles when the prey were faster than the predator. 
+Optimal strategy is therefore most meaningful to prey when approached by a predator of intermediate speed.
+When the predator is either slower or much faster than the prey, an optimal strategy may not exist or offer little benefit to predator evasion. 
 
 \end{abstract}
 
 \pagebreak
 
-%TODO:Cite Holzmann SIFF paper
+
 
 % --------------------------------------------------------------------------------
 \section{Introduction}
@@ -73,20 +73,21 @@ In contrast, our understanding for how prey evade capture by locomotion is relat
 Studies that have explored this subject \citep[reviewed by][]{Domenici:2011tv} underscore the common-sense notion that the direction of an escape matters to a prey's survival. This idea is formalized by pursuit models that aim to determine the optimal direction of an escape response. 
 The present study examined such a model, based on \cite{Weihs:1984tb}, to consider the strategic consequences of deviating from optimal strategy in piscivorous interactions. We compared the model's predictions to experimental results in zebrafish (\textit{Danio rerio}) \citep{Stewart:2014cm} and arrived at new interpretations of theory on prey strategy.
 
-Pursuit models are an area of game theory that offers a basis for examining locomotor behavior in strategic terms. There is recent interest in revisiting these models \citep[e.g.][]{Howland:1974, Weihs:1984tb} with experimental studies that consider the behavior of both predators and prey. 
+Pursuit models are an area of game theory that offers a basis for examining locomotor behavior in strategic terms. There is recent interest in revisiting game-theory models \citep[e.g.][]{Howland:1974, Weihs:1984tb, Djemai:2010hp, Gal:2014ve} with experimental studies that consider the behavior of both predators and prey. 
 This includes work on running vertebrates \citep[e.g.][]{Wilson:2014fd}, birds \citep[e.g.][]{Kullberg:1998ur} and bats \citep[e.g.][]{Ghose:2006dk} in flight, running insects \citep{Domenici:2008kra}, flying insects \citep[e.g.][]{Combes:2012eta}, and swimming zooplankton \citep[e.g.][]{Arnott:1999wx, Heuch:2007kk} and fishes \citep[e.g.][]{Domenici:2000un}. 
 These efforts offer the potential to reveal how sensory and motor systems govern the outcome of predator--prey interactions. 
 
-A piscivorous interaction offers some advantages as a model for examining the sensory-motor basis of predator evasion. In many cases, this interaction can be easily studied in a laboratory. 
-Under artificial conditions, predatory fishes attempt to feed on prey and prey initiate a `fast-start' escape response (Fig. \ref{pred_prey}). Both players operate with motion that is largely two-dimensional and therefore relatively simple to measure and describe. 
-Zebrafish behave in this manner \citep{Stewart:2013bh} and this species offers a growing wealth of understanding in physiology and neuroscience \citep[e.g.][]{McLean:2011gi, Briggs:2002uf} that may be leveraged for mechanistic insight on predator--prey interactions. 
+A piscivorous interaction offers some advantages as a model for examining the sensory-motor basis of predator evasion. In many cases, this interaction can be easily studied in a laboratory, where predatory fishes attempt to feed on prey and prey initiate a `fast-start' escape response (Fig. \ref{pred_prey}). 
+Both players operate with motion that is largely two-dimensional and therefore relatively simple to measure and describe. 
+Zebrafish adults prey on larvae of the same species in the lab \citep{Stewart:2013bh} and this species offers a growing wealth of understanding in physiology and neuroscience \citep[e.g.][]{McLean:2011gi, Briggs:2002uf} that may be leveraged for mechanistic insight on predator--prey interactions. 
 In addition, fish offer one of the few biological pursuit systems that have been mathematically modeled \citep{Weihs:1984tb}. This model offers specific predictions of swimming trajectories that may be tested with kinematic measurements. 
 
-Deviation from optimal strategy has commonly been interpreted as a strategic adaptation. The protean hypothesis suggests that prey which are unpredictable should have an advantage in predator evasion over predictable prey \citep{Humphries:1970hy}. 
-This idea may apply to the erratic motion of an individual or a population of prey that collectively exhibit variable motion that challenges a predator's ability to learn or adapt. The fast start of a fish generates a turn and acceleration of the body in a particular direction and therefore would appear to correspond to the latter category \citep{D:1973up}. 
-Regardless, a potential trade-off exists for the direction of a fast start between generating the optimal displacement away from an advancing predator and the benefit of being unpredictable.  
+Deviation from optimal strategy has been interpreted as a strategic adaptation. The protean hypothesis suggests that prey that are unpredictable have an advantage in predator evasion over predictable prey \citep{Humphries:1970hy}. 
+This idea may apply to the erratic motion of an individual or a population of prey that collectively exhibit variable motion that challenges a predator's ability to learn or adapt. 
+The fast start of a fish generates a turn and acceleration of the body in a particular direction and therefore would appear to correspond to the latter category \citep{D:1973up}. 
+Regardless, a potential trade-off exists between a direction that generates optimal displacement from a predator and one that is unpredictable.  
 
-Interpretations of prey motion have generally not considered the effect of deviating from optimal strategy. For example, it is not clear whether an escape that is 5\textdegree\hspace{0.5pt} or 50\textdegree\hspace{0.5pt} from the optimum predicted by \cite{Weihs:1984tb} has a major or negligible effect on evasion success. 
+Interpretations of prey motion have generally not considered the implications of deviating from optimal strategy. For example, it is not clear whether an escape that is 5\textdegree\hspace{0.5pt} or 50\textdegree\hspace{0.5pt} from the optimum predicted by \cite{Weihs:1984tb} has a major or negligible effect on evasion success. 
 If the performance of an escape is insensitive to differences in escape direction, then no trade-off will exist between evasiveness and predictability. In short, it is unclear when optimal strategy matters. 
 The present study therefore revisited the mathematics of the \cite{Weihs:1984tb} model to examine how deviation from optimal strategy affects prey evasion. We expanded this model and performed numerical simulations for comparison with experimental results. In this effort, we arrived at new interpretations of theory on prey evasion. In particular, we identified conditions where the escape direction is predicted to have little or no effect on the evasiveness of prey.
 
@@ -94,14 +95,14 @@ The present study therefore revisited the mathematics of the \cite{Weihs:1984tb}
 \section{Optimal prey strategy}
 \label{opt_strategy}
 
-The Homicidal Chauffeur is the colorful title for a pursuit game that has been applied to a variety of systems, including predator--prey interactions \citep{Isaacs:1965va}. Pursuit games consider the trajectories of its players and thereby address the effects of directional decision--making to the outcome of an interaction. 
+The Homicidal Chauffeur is the colorful title for pursuit games that have been applied to a variety of systems, including predator--prey interactions \citep{Isaacs:1965va}. These games consider the trajectories of its players to address the strategic effects of directional decision--making. 
 Weihs and Webb (1984) adopted the Homicidal Chauffeur to model the responses of a prey fish that encounters a predator fish. Here we offer a brief review of this model as a means to explain the basis for our expansion of the theory and our interpretations of prey strategy, though a more complete derivation is presented in the original study \citep{Weihs:1984tb}.
 
 The payoff is a quantity used in game models to define the beneficial or detrimental consequences of playing with a particular strategy \citep{Webb:2007hg}. For pursuit models, the payoff is often defined as the minimum distance between predator and prey. 
 This quantity reflects the condition where the predator has the best opportunity to capture the prey. The optimal strategy for an evasive prey is therefore defined as the escape angle that yields the greatest minimum distance (Weihs and Webb, 1984).
 
 Predicting the distance between predator and prey requires relatively few parameters under some simplifying assumptions. In the rapid events of a predatory strike, it is reasonable to approximate the predator's motion as a constant speed, $U$. 
-If one neglects the acceleration period of the fast start, then the prey's motion may be approximated with a constant speed, $V$, at an escape angle $\alpha$, defined with respect to the heading of the predator (Fig. \ref{pred_prey}A). Under these conditions, the distance between predator and prey, $D$, may be calculated over time:
+If one neglects the acceleration period of the fast start, then the prey's motion may also be approximated with a constant speed, $V$, at an escape angle $\alpha$, defined with respect to the heading of the predator (Fig. \ref{weihs_topo}A). Under these conditions, the distance between predator and prey, $D$, may be calculated over time:
 %
 \begin{equation}
 D^2 = ((X_0 - Ut) + Vt\cos\alpha)^2 + (Vt\sin\alpha)^2,
@@ -117,7 +118,7 @@ t_{\text{min}} = \frac{X_0}{V} \frac{K-\cos\alpha}{1-2 K\cos\alpha+K^2},
 \label{eq33weihs}	
 \end{equation}
 %
-where $K$ indicates the speed of the predator relative to the prey ($K = U/V$). Weihs and Webb observed that this equation yields negative values of time where $K<1$ and is therefore only useful when the predator is faster than the prey (Weihs and Webb, 1984). The minimum distance was consequently determined for $K>1$ by solving for distance (Eqn. \ref{dist}) at $t_{\text{min}}$:
+where $K$ indicates the speed of the predator relative to the prey ($K = U/V$).This equation yields negative values of time where $K<1$ and therefore only applies where $K>1$. The minimum distance was consequently determined for $K>1$ by solving for distance (Eqn. \ref{dist}) at $t_{\text{min}}$:
 %
 \begin{equation}
 \ol D_{\text{min}}^2 = \frac{D_{\text{min}}^2}{X_0^2} = \frac{\sin^2\alpha}{K^2 - 2K \cos\alpha + 1},
@@ -140,23 +141,23 @@ Among the solutions that satisfy this equation, Weihs and Webb proposed that the
 \end{equation}
 %
 We added the $\pm$ symbol to this expression to indicate that prey are equally effective if escaping at an optimal angle toward the left ($\alpha>0$), or right ($\alpha<0$) of the predator's heading. 
-For relatively fast prey ($K\leq1$), Weihs and Webb suggested that the optimal solution consists of swimming directly away from the predator ($\alpha = 0$)  (Weihs and Webb, 1984). Therefore, for any predator speed, this model offers predictions for how a prey can direct its escape to maximize its chances for survival by creating the greatest distance from a predator. 
+For relatively fast prey ($K<1$), Weihs and Webb suggested that the optimal solution consists of swimming directly away from the predator ($\alpha = 0$)  (Weihs and Webb, 1984). Therefore, for any predator speed, this model offers predictions for how a prey can direct its escape to maximize its chances for survival by creating the greatest distance from a predator. 
 
 % --------------------------------------------------------------------------------
 \section{When optimal strategy matters}
 
-An optimum adopts a different meaning if it corresponds to a shallow peak in performance or defines a local peak that is much smaller than the global maximum. We considered whether these conditions exist in evasion strategy by calculating how the payoff in this pursuit model, the minimum distance \citep{Weihs:1984tb}, varies with escape angle and the relative speed of the predator. 
-This was considered by formulating a performance landscape of prey strategy. As an alternative to analytical mathematics (Eqn. \ref{dmin}), we first formulated this landscape with a numerical approach that is simple enough to execute in a spreadsheet, but which we implemented in Matlab (MathWorks, Natick, MA, USA). 
-This was done by defining a series of time values at an equal interval, which was used to calculate the positions of the predator ($X_{\text{pred}} = Ut$, $Y_{\text{pred}} = 0$) and prey ($X_{\text{prey}}=Vt\cos\alpha,Y_{\text{prey}}=Vt\sin\alpha$). 
+An optimum adopts a different meaning if it corresponds to a sharp global maximum, a local peak much smaller than the global maximum, or a shallow peak in performance. We considered the conditions exist that surround optimal strategy by calculating how the payoff in this pursuit model, the minimum distance \citep{Weihs:1984tb}, varies with escape angle and the relative speed of the predator. 
+As an alternative to analytical mathematics, we first formulated this performance landscape with a numerical approach that is simple enough to execute in a spreadsheet, but which we implemented in Matlab (v2014b, MathWorks, Natick, MA, USA). 
+This was done by defining a series of time values at a regular interval, which was used to calculate the positions of the predator ($X_{\text{pred}} = Ut$, $Y_{\text{pred}} = 0$) and prey ($X_{\text{prey}}=Vt\cos\alpha,Y_{\text{prey}}=Vt\sin\alpha$). 
 The minimum value of the distance between them was determined in this way for variable escape angle and predator speed, over a range of $K$ and $\alpha$ values (Fig. \ref{weihs_topo}B). This yielded results that were coincident with the analytical equation for $\ol D_{\text{min}}$ formulated by Weihs and Webb (1984) for relatively fast predators ($K>1$, Eqn. \ref{dmin}). 
-However, the advantage of the numerical calculations was that they allowed us to examine variation in the minimum distance for slower predators (i.e. $K<1$) as well. The resulting performance landscape (Fig. \ref{weihs_topo}B) illustrates how the minimum distance varies over a broad range of values in the relative speed of the predator and escape angle of the prey.
+However, the advantage of this numerical calculation was that it allowed us to examine variation in the minimum distance for slower predators (i.e. $K<1$) as well. The resulting performance landscape (Fig. \ref{weihs_topo}B) illustrates how the minimum distance varies over a broad range of values in the relative speed of the predator.
 
-Our results suggest that the fast start is unlikely to be effective at any escape angle when a prey is approached by a very fast predator. For example, if a predator is an order of magnitude faster than its prey (i.e. $K=10$), then the prey can do no better than displace its body by $10\%$ of its initial distance from the predator (Fig. \ref{weihs_topo}B). 
-In addition, differences in escape angle have little effect on the minimum distance. An escape that is  24.5\textdegree\hspace{2pt} larger or smaller than the optimum yields a minimum distance that is less than the value at the optimum by 0.1 (i.e. 1\% of the starting position of the prey). 
+Our results suggest that the fast start is unlikely to be effective at any escape angle when a prey is approached by a very fast predator. For example, if a predator is an order of magnitude faster than its prey (i.e. $K=10$), then the prey can do no better than displace its body by $10\%$ of its initial distance (Fig. \ref{weihs_topo}B). 
+In addition, differences in escape angle have little effect on the minimum distance. Specifically, an escape that is  24.5\textdegree\hspace{2pt} larger or smaller than the optimum yields a minimum distance that is less than the value at the optimum by 0.1 (i.e. 1\% of the starting position of the prey). 
 These metrics become increasingly unfavorable for the prey when approached by an even faster predator (Fig. \ref{weihs_topo}B). At these speeds, inaccuracy in the feeding strike is likely a more decisive factor to prey survival than anything the prey may do in response.
 
 A different picture emerges when one considers prey that move more quickly than their predators (i.e. $K<1$). This condition occurs when predators brake or glide slowly on their approach toward a prey \citep{Higham:2007go, Higham:2005iu} while the prey initiates a rapid escape. 
-For a variety of escape angles, the fast start of these prey cause the predator to reach no closer than the starting distance (i.e. $\ol D_{\text{min}}=1$, Fig. \ref{weihs_topo}B). In order to define the bounds of this domain, it is useful to consider the first derivative of the distance function with respect to time:
+For a variety of escape angles, the fast start of these prey cause the predator to reach no closer than the starting distance (i.e. $\ol D_{\text{min}}=1$, Fig. \ref{weihs_topo}B). In order to define the bounds of this domain, it is useful to consider the first derivative of the distance function with respect to time (see Supplemental Materials for details):
 %
 \begin{equation}
 \frac{\d D^2}{\d t}= 2(t(U^2+V^2) - UX_0 + V(X_0-2tU)\cos\alpha).
@@ -174,13 +175,14 @@ However, it also holds true that distance increases for another solution to Eqn.
 This analysis suggests that if the escape response of a prey is capable of exceeding the approach speed of the predator, then a wide range of angles yield equally successful escapes for the prey and thereby define a performance plateau. 
 
 The domain where the optimal strategy matters the most resides between where the prey and predator are equivalent in speed and where the predator is an order of magnitude faster ($1<K<10$). 
-In this domain, prey are capable of attaining appreciable minimum distance values and there is a penalty for deviating from the optimal angle (Fig. \ref{weihs_topo}B). 
-Therefore, a prey fish has a strong incentive to conform to the optimal prediction when encountering a slightly faster predator.
+In this domain, prey are capable of attaining appreciable minimum distance values and there is a penalty in minimum distance for deviating from the optimal angle (Fig. \ref{weihs_topo}B). 
+Therefore, a prey fish has a strong incentive to conform to the optimal prediction when encountering a predator that can move slightly faster than itself.
+
 
 % --------------------------------------------------------------------------------
 \section{Comparing models with measurements}
 
-We were interested in examining whether optimal strategy matters under experimental conditions. This was addressed with recent  measurements on larval zebrafish, which are preyed upon by adults of the same species \citep{Stewart:2013bh}. 
+We were interested in examining whether optimal strategy matters under experimental conditions. This was addressed with recent  measurements on larval zebrafish, which were preyed upon by adults of the same species \citep{Stewart:2013bh}. 
 This work included experiments that used a robot to simulate the approach of a predator toward prey in the dark, with recordings of the position at which the prey responded with a fast start and the direction of that response \citep{Stewart:2014cm}. 
 This evasive action was stimulated by the lateral line system of the prey, which detected the water flow generated by the approaching predator. 
 
@@ -190,7 +192,7 @@ As a consequence of the relatively slow approach made by these suction-feeding p
 
 One discrepancy between the model and our experiments was that the majority of prey fish did not exhibit an initial position that was aligned with the heading of the predator robot. This condition has biological relevance because it corresponds to a situation where a predator fails to approach a prey with perfect accuracy. 
 We therefore modified the Weihs and Webb model by adding a lateral component to the initial position of the prey in our distance function. 
-However, we followed the same procedure (as in Eqns. \ref{eq33weihs}--\ref{dmin}) to arrive at a minimum distance function (see Supplemental Materials for details). We found that our solutions were simplified by the use of polar coordinates. For example, we found the following equation for the minimum distance:
+Following the same procedure (Eqns. \ref{eq33weihs}--\ref{dmin}), we arrived at a minimum distance function (see Supplemental Materials for details). This function was simplified by the use of polar coordinates, as in the following equation:
 %
 \begin{equation}
 \ol{D}^2_{\text{min}}= \ds\frac{{D}^2_{\text{min}}}{R_0^2 }=
@@ -198,8 +200,8 @@ However, we followed the same procedure (as in Eqns. \ref{eq33weihs}--\ref{dmin}
 \label{Dmin_polar}
 \end{equation}
 %
-where $R_0$ and $\theta_0$ are the initial radial and angular positions of the prey relative to the mouth of the predator (Fig. \ref{weihs_topo}A). Numerical solutions to this equation show a broad range of angular positions and escape angles that define a performance plateau where $D_{\text{min}}=1$ (Fig. \ref{our_topo}B). 
-We found the margins of this plateau using a similar procedure as outlined above. Specifically, we solved for the conditions where the derivative of the minimum distance with respect to $\alpha$ was equal to zero:
+where $R_0$ and $\theta_0$ are the initial radial and angular positions of the prey relative to the mouth of the predator (Fig. \ref{weihs_topo}A). Numerical solutions to this equation showed a broad range of angular positions and escape angles that defined a performance plateau where $D_{\text{min}}=1$ (Fig. \ref{our_topo}B). 
+We found the margins of this plateau using a similar procedure as outlined above (Eqn. \ref{eq37weihs}). Specifically, we solved for the conditions where the derivative of the minimum distance with respect to $\alpha$ was equal to zero:
 %
 \begin{equation}
 0 = \frac{\d \ol{D}^2_{\text{min}}}{\d \alpha} = 
@@ -208,7 +210,7 @@ We found the margins of this plateau using a similar procedure as outlined above
 \label{DminDalpha}
 \end{equation} 
 %
-We found the solutions that satisfy this equation by setting the terms in the numerator equal to zero. The solution for $K>1$ was similar to Eqn. \ref{K>1}, though the initial angular position determines the sign of the optimal angle: 
+We found solutions that satisfy this equation by setting the terms in the numerator equal to zero. The solution for $K>1$ was similar to Eqn. \ref{K>1}, though the initial angular position determines the sign of the optimal angle: 
 %
 \begin{equation}
 \alpha_{\text{opt}} = \frac{\theta_0}{|\theta_0|}  \arccos(K^{-1}).
@@ -220,12 +222,13 @@ This result holds true when prey are positioned lateral to the predator, but thi
 %
 \begin{equation}
 \ol D_{\text{min}}=1 \text{ if }  0 \leq \alpha  \leq  [|\theta_0 |  + \arccos(K \cos | \theta_0 |)],
+\label{plateau_eqn}
  \end{equation}
 %
 This demonstrates that the performance plateau reduces in area with increasing predator speed (Fig. \ref{our_topo}B). Therefore, fewer combinations of starting positions and escape angles yield equivalent escape performance for faster predators.
 
 Using this formulation of the pursuit model, we evaluated how the measured responses of prey compared to the model predictions (Fig. \ref{our_topo}C). This revealed that the vast majority of larvae operated within the performance plateau and therefore were predicted to yield maximal performance ($\ol D_{\text{min}}=1$). 
-This was true even at the fastest predator approach speed ($K=0.90$), where the performance plateau encompasses a smaller area of the performance landscape. Therefore, the large variation in observed escape direction incurs no penalty in the evasive performance of most larvae. 
+This was true even at the fastest predator approach speed ($K=0.90$), where the performance plateau encompassed a smaller area of the performance landscape. Therefore, the large variation in observed escape direction incurs no penalty in the evasive performance of most larvae. 
 
 
 % --------------------------------------------------------------------------------
@@ -241,20 +244,39 @@ As we discussed above (in ``Optimal prey strategy"), the fast start can become i
 We conducted a series of simulations that examine the effect of an inaccurate strike by a fast predator. As in our comparison with experimental results (Fig. \ref{our_topo}), we calculated the minimum distance for a range of values in escape angle and initial position, but this time considered predators that were faster than prey ($K>1$). 
 We interpreted deviation from a zero angular position as a measure of inaccuracy in the strike of the predator with the assumption that fish lack the interception targeting used by bats \citep{Ghose:2006dk} and birds \citep{Kane:2014fs}. This measure of inaccuracy neglects the increasing challenge of correct timing in the opening of the jaws at increasing approach speeds \citep{Kane:2014bh,Kane:2011hz}, but does address errors in the direction of the approach.
 
-The results of these simulations illustrate the relative contribution of escape angle and strike accuracy on evasion for different approach speeds. For a predator that is twice as fast as the prey ($K=2$), the minimum distance varies substantially with both escape direction and strike accuracy (Fig. \ref{k>1_topo}A). 
-For example, the optimal escape angle ($\alpha_{\text{opt}}=60.0$\textdegree) generates a minimum distance ($\ol D_{\text{min}}=0.71$) that is more than two-orders of magnitude better than what may be achieved with the least effective escape direction ($\ol D_{\text{min}}=0.002$) when the prey is positioned 15\textdegree\hspace{0.5pt} from the predator's heading. 
-This advantage in minumum distance is not greatly reduced ($\ol D_{\text{min}}=0.50$ at $\alpha_{\text{opt}}=60$\textdegree) if the predator successfully aligns its strike ($\theta_0=0$\textdegree). 
-However, the escape angle plays a reduced role in aiding predator evasion at faster approach speeds. For example, when the predator is 10-times faster  (Fig. \ref{k>1_topo}C) and inaccurate ($\theta_0=15$\textdegree), then the optimal escape angle ($\alpha_{\text{opt}}=84.3$\textdegree) is only slightly more than twice the value ($\ol D_{\text{min}}=0.35$) for the least effective angle ($\ol D_{\text{min}}=0.16$). 
-Furthermore, the optimal minimum distance ($\ol D_{\text{min}}=0.10$) is relatively ineffective for an accurate strike ($\theta_0=0$\textdegree). 
+The results of these simulations illustrate the relative contribution of escape angle and strike accuracy on evasion for different approach speeds. For a predator that is twice as fast as the prey ($K=2$), the minimum distance varied substantially with both escape direction and strike accuracy (Fig. \ref{k>1_topo}A). 
+For example, the optimal escape angle ($\alpha_{\text{opt}}=60.0$\textdegree) generated a minimum distance ($\ol D_{\text{min}}=0.71$) that was more than two-orders of magnitude better than what was achieved with the least effective escape direction ($\ol D_{\text{min}}=0.002$) when the prey is positioned 15\textdegree\hspace{0.5pt} from the predator's heading. 
+This advantage in minimum distance was not greatly reduced ($\ol D_{\text{min}}=0.50$ at $\alpha_{\text{opt}}=60$\textdegree) if the predator successfully aligned its strike ($\theta_0=0$\textdegree). 
+However, the escape angle played a reduced role in aiding predator evasion at faster approach speeds. For example, when the predator was 10-times faster  (Fig. \ref{k>1_topo}C) and inaccurate ($\theta_0=15$\textdegree), then the optimal escape angle ($\alpha_{\text{opt}}=84.3$\textdegree) was only slightly more than twice the value ($\ol D_{\text{min}}=0.35$) for the least effective angle ($\ol D_{\text{min}}=0.16$). 
+Furthermore, the optimal minimum distance ($\ol D_{\text{min}}=0.10$) was relatively ineffective for an accurate strike ($\theta_0=0$\textdegree). 
 Therefore, the accuracy of a predators' strike becomes an increasingly dominant factor in determining prey survival with predators that are many times faster than the prey.
 
 % --------------------------------------------------------------------------------
 \section{Conclusions}
 
-The present results offer a new perspective on predator-prey strategy. 
+The results of our modeling demonstrates theoretical conditions where the optimal strategy of prey matters little to the outcome of a predatory strike. These conditions depend on the relative speed of the predator and prey, which underscores the coupled nature of pursuit strategy. 
+When a predator approaches relatively slowly, prey have the opportunity to escape in a variety of directions (Figs. \ref{weihs_topo}B, \ref{our_topo}B--C). When they strike quickly, the accuracy of the predator's heading becomes a major determinant in the outcome (Fig. \ref{k>1_topo}). These interpretations have the potential to inform our reading of previous studies. 
+However, the behavior of predator and prey fish are rarely studied simultaneously and the relative speed of predator and prey are seldom reported. Therefore, the present modeling may be most useful in offering a framework for future investigations.
+
+It may appear counter-intuitive that any predator would move more slowly than its prey. Predatory fishes are commonly between 2- and 20-fold greater in length than their prey \citep{Fuiman:1994ef} and are genrally capable of swimming many times their body length per second by rapid undulation \citep{Bainbridge:1958uja}. 
+However, fishes also exhibit a large scope of swimming speeds and may move slowly by the coordinated braking action of their many fins \citep{Videler:1981zz, McHenry:2005tc}. Many suction-feeding predators take advantage of this hydrodynamic plasticity to slow swimming on the approach of a feeding strike. This braking results in swimming that is in the lower range of potential speeds, at rates below a single body length per second \citep{Higham:2005iu,Higham:2007go}. 
+In contrast, a startled prey may act to maximize its proximity from a predator with its fastest swimming possible. Even a larval fish may attain speeds in excess of 50 lengths s$^{-1}$ during a fast start \citep{Muller:2004hp}. Therefore, prey may compensate for their smaller size if the predator brakes for suction feeding to yield a condition where$K<1$ (Fig. \ref{our_topo}). 
+
+When a prey swims faster than a predator escape may be successful in a variety of directions (Eqn. \ref{plateau_eqn}). Any escape in this domain prohibits the predator from getting any closer than the distance at which the prey initiates its escape (Fig. \ref{our_topo}). This strategic benefit is compatible with our thinking about the motor control of the escape response. 
+Zebrafish larvae respond to a robotic predator with directionality that is no more specific than moving away from the side of the body exposed to a faster flow stimulus \citep{Stewart:2014cm}. Such crude decision-making may be achieved through relatively few synapses that serve to create motion with brief latency \citep{Liu:1999fs}. 
+The present results suggest that there is little strategic disadvantage to this motor control. A shorter latency allows the prey to respond at greater distance and the direction of most responses is equally effective, even for the fastest predator (Fig. \ref{our_topo}C). 
+
+It could be suggested that a failure of prey to conform to a single escape direction indicates deviation from optimal strategy. The benefit to a population of prey responding this way is that they become unpredictable to predators \citep{Humphries:1970hy}. However, our view is that a performance plateau, and not an optimum, permits maximal evasiveness for a large range of escape directions (Fig. \ref{our_topo}B--C). Therefore, no trade-off exists in this domain between predictability and evasiveness.
+
+Different strategic dynamics come into play when the predator is faster than the prey. At intermediate speeds ($1<K<10$), deviation from optimal strategy has the potential for large adverse consequences (Fig. \ref{weihs_topo}B, \ref{k>1_topo}A--B) and it is therefore in this domain that optimal strategy is most likely to be meaningful for the prey. 
+To move in the optimal direction, the prey must detect the heading and speed of the predator, which is likely to be achieved by the visual or lateral line systems \citep{Stewart:2013bh, Dill:1974ws, Paglianti:2006gg, Higgs:1996uu}. It is additionally necessary that the motor system be capable of rapidly propelling the fish in the optimal direction. As noted by Domenici, constraints on the sensory and motor systems can prohibit a prey from conforming to an optimum \citep{Domenici:2011tv}. 
+
+Sensory-motor constraints may plat a role in guppies (\textit{Poecilia reticulata}) that are preyed upon by pike cichlids (\textit{Crenicichla alta}) \citep{Walker:2005bb}. These predators are approximately twice as fast as the prey and the prey escape in a variety of directions. The survivorship was also higher in prey that escaped directed directly away from predators ($\alpha \sim 180$\textdegree) than those which responded in the optimal direction that our model would predict ($\alpha_{\text{opt}}=60.0$\textdegree). It is alternatively possible that the pike may accelerate to a degree that substantially violates the assumptions of our model.
+
+Our model predicts that the accuracy of a predator's strike becomes a dominant factor in the outcome of an interaction for predators that approach at high speed ($K>10$).  In this domain, differences in minimum distance amount to minor performance differences cross a broad range of escape angles (Fig. \ref{weihs_topo}B). It remains possible that these differences in distance are more meaningful to the hydrodynamics of prey evasion when the predator is attempting a rapid strike. Resolving this issue would require an explicit consideration of hydrodynamics \citep[as in][]{Holzman:2011fq}.
 
 
-The model's assumptions could be violated by the system. For example, a prey fish cannot move in an optimal direction that maximizes its distance from a predator if it cannot detect the predator's speed \citep{Weihs:1984tb}.
+
 
 % REFERENCES
 %  -------------------------------------------------------------------------------
