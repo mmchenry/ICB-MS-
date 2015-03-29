@@ -41,7 +41,7 @@
 \linespread{1.5}	
 \linenumbers
 
-\title{Escape direction does not matter for some fish prey}
+\title{Direction of escape does not matter for some fish prey}
 
 \author{Alberto Soto, William J. Stewart and Matthew J. McHenry\\
   Department of Ecology \& Evolutionary Biology,\\
@@ -61,17 +61,17 @@
 % --------------------------------------------------------------------------------
 \newpage
 \section{Performance Plateau when $K < 1$}
-In this is section, we provide details to show that when the prey is faster than the predator $(K<1)$, then there exists a performance plateau. That is, an equivalent greatest minimum distance is  achieved for a large range of escape angles $\alpha$. For escape angles in this range, the prey performs equally well.   
+In this is section, we provide details to show that if the prey is faster than the predator $(K<1)$, then there exists a performance plateau. That is, an equivalent greatest minimum distance is  achieved for a large range of escape angles $\alpha$. For escape angles in this range, the prey performs equally well.   
 
-\subsection{Distance increases for a range of $\alpha$ values}
-Here we show that the minimum distance function is not affected by a large range of escape angles. For reference, the distance function is given by the following equation:
+\subsection{Distance is monotone increasing for a range of $\alpha$ values}
+Here we show that the minimum distance does not depend on the choice of $\alpha$ for a large range of escape angles and $K<1$. For reference, the distance function is given by the following equation:
 %
 \begin{equation}
 D^2 = ((X_0 - Ut) + Vt\cos\alpha)^2 + (Vt\sin\alpha)^2,
 \label{eq:WeihsDist}
 \end{equation}
 %
-where $X_0$ is the starting position of the prey. Note that at $t=0$, $D^2 = X_0^2.$ 
+where $U$ and $V$ are the constant predator and prey speeds, respectively, and $X_0$ is the initial position of the prey. Note that at $t=0$, $D^2 = X_0^2.$ 
 
 For this case, we are interested in escape angles between the two solutions given by Weihs and Webb (1984)
 %
@@ -82,11 +82,9 @@ For this case, we are interested in escape angles between the two solutions give
 The above leads to an important inequality given by
 \begin{equation}
 K \leq \cos\alpha \leq 1.
-\label{cosinebound}
+\label{eq:cosinebound}
 \end{equation} 
-This inequality plays a crucial role in the following proof.      
-%
-To show that the minimum distance does not change for this range of escape angles and $K<1$, it suffices to show that the distance function is always increasing. That is, we want to show that the derivative of Eqn. \ref{eq:WeihsDist} with respect to time is greater than or equal to zero. 
+The inequality given by Eqn. \ref{eq:cosinebound} plays a crucial role in the following proof. To show that the minimum distance does not change for this range of escape angles and $K<1$, it suffices to show that the distance function is increasing for all time (i.e. monotone increasing). That is, we want to show that the derivative of Eqn. \ref{eq:WeihsDist} with respect to time is greater than or equal to zero. 
 
 \begin{proof} Assume that $K<1$ and that Eqn. \ref{cosinebound} holds. 
 Taking the derivative of Eqn. \ref{eq:WeihsDist} with respect to time yields
@@ -96,7 +94,7 @@ Taking the derivative of Eqn. \ref{eq:WeihsDist} with respect to time yields
 \label{distderivative}
 \end{equation}  
 %
-Let $U=1$. Since $K = U/V,$ the assumption on the predator's speed leads to $V > 1.$ 
+Let $U=1$. Since $K = U/V,$ the assumption on the predator's speed, $U$, implies that $V > 1.$ 
 Then equation \eqref{distderivative} becomes
 %
 \begin{equation}
@@ -108,7 +106,7 @@ which is a linear function in time. To show Eqn. \ref{eq:DLine} is nonnegative f
 %
 \begin{itemize}
 \item Positive slope; \\
-Eqn. \ref{cosinebound} implies $V\cos\alpha \leq V$. Multiplying by $-2$ and adding $1+V^2$ on both sides yields  
+Since $V>1$, Eqn. \ref{cosinebound} implies $V\cos\alpha \leq V$. Multiplying this inequality by $-2$ and adding $1+V^2$ on both sides yields  
 \begin{equation}
 1+V^2 -2V \cos\alpha \geq 1 -2V + V^2 = (V-1)^2 > 0.
 \label{eq:slope}
@@ -124,13 +122,13 @@ K \leq \cos\alpha \implies 1 = VK \leq V\cos\alpha \implies 0 \leq V\cos \alpha 
 %
 Eqns. \ref{eq:slope} and  \ref{eq:intercept} together show that the distance is always increasing for $0\leq \alpha \leq \arccos (K)$ and $K<1.$ 
 \end{proof}
-An analogous argument applies for $-\arccos(K) \leq \alpha < 0.$ The preceding proof shows that the minimum occurs at $t=0$ and is $D^2 = X_0^2.$ This defines a performance plateau for the prey as a wide range of angles yield equally successful escapes. 
+An analogous argument applies for $-\arccos(K) \leq \alpha < 0.$ The preceding proof shows that the minimum distance occurs at $t=0$ and is given by $D^2 = X_0^2.$ This defines a performance plateau for the prey as a wide range of angles yield equally successful escapes. 
 
 
 
 % --------------------------------------------------------------------------------
 \section{Initial Lateral Displacement}
-The distance function given by Eqn. \ref{eq:WeihsDist} is based on the assumption that a predator is heading in the direction of the prey. To model a predator that does not perfectly align its motion with the prey's direction, as is presented in the main text for a predator robot, we introduced a lateral initial displacement to the distance function. 
+The distance function given by Eqn. \ref{eq:WeihsDist} is based on the assumption that the predator is heading in the direction of the prey. To model a predator that does not perfectly align its motion with the prey's direction, as is presented in the main text for a predator robot, we introduced a lateral initial displacement to the distance function. 
 
 \subsection{Distance function with initial lateral displacement}
 The distance function is now given by    
@@ -151,7 +149,7 @@ D_0^2 = R_0^2 + (1 + K^2) t^2 V^2 -
  \label{eq:Dpolar}
 \end{equation}
 %
-To find the time at which Eqn. \ref{eq:Dpolar} is minimized, we find the roots of the derivative of Eqn. \ref{eq:Dpolar} with respect to $t$ which yields
+To find the time at which Eqn. \ref{eq:Dpolar} is minimal, we find the roots of the derivative of Eqn. \ref{eq:Dpolar} with respect to $t$ which yields
 %
 \begin{equation}
 t_{\text{min}} = \ds \frac{R_0}{V} \frac{\left[K \cos \theta_0 - \cos(\alpha - \theta_0)\right ]}{1- 2K \cos \alpha + K^2}
@@ -203,7 +201,7 @@ This solution is valid for $K\geq1.$ This solution indicates that prey are equal
 \label{eq:case2}
 \end{equation}
 %
-This equation gives the conditions that $K$ and $\theta_0$ must satisfy so that solutions are real--valued. Explicitly, the condition is given by the following
+This equation gives conditions which $K$ and $\theta_0$ must satisfy so that solutions are real--valued. Explicitly, the condition is given by the following
 %
 \begin{equation}
  | K\cos \theta_0 | \leq 1
@@ -228,14 +226,14 @@ For $K<1,$ the following equation defines the boundaries of the performance plat
 \quad |\alpha - \theta_0|  \leq    \arccos(K \cos  \theta_0) ,
  \end{equation}
 %
-For $K>1$ the solutions $\alpha_{2,3}$ are not optimal unless $\theta_0$ satisfies Eqn. \ref{eq:boundtheta0}. 
+For $K>1$ the solutions $\alpha_{2,3}$ are not optimal unless $\theta_0$ simultaneously satisfies Eqn. \ref{eq:boundtheta0}. 
 
 \item[]{\bf Case 3:} Solving the equation $K\sin \theta_0 + \sin(\alpha -\theta_0) = 0$ yields
 \begin{align*}
 \alpha_4 & = \theta_0 - \arcsin(K \sin \theta_0) \\
 \alpha_5 & = \pi + \theta_0 + \arcsin(K \sin \theta_0)
 \end{align*}
-For $K<1$, $\alpha_4$ is contained within the bounds defined by Eqn. \ref{eq:alphabound} and $\alpha_5$ is a local minimum. When $K>1$, the solutions are local minimums and thus not optimal.     
+For $K<1$, $\alpha_4$ is contained within the bounds defined by Eqn. \ref{eq:alphabound} and $\alpha_5$ is a local minimum. When $K>1$, the solutions are local minima and thus not optimal.     
 \end{enumerate}
 
 
